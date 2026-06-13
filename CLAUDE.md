@@ -1,6 +1,6 @@
 # CLAUDE.md — agent guardrails & context priming
 
-You are working in **Specced**, a spec-driven toolkit for **clinical → FHIR extraction**. Read `PROJECT.md` for goals/architecture and `SPEC.md` for the extraction-case format before non-trivial work.
+You are working in **Specced**, a spec-driven toolkit for **clinical → FHIR extraction**. Read `docs/SPEC.md` for the task/data model and `docs/ARCHITECTURE.md` for how the code fits together before non-trivial work.
 
 ## What we build here
 

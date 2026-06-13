@@ -1,6 +1,6 @@
 # STORIES.md — user-story backlog
 
-The project as a sequence of user stories. Each has a goal, scope, acceptance criteria, and status. Maps to the Weeks 3–4 build plan in `PROJECT.md`. Status: ✅ done · 🚧 in progress · ⬜ planned.
+The project as a sequence of user stories. Each has a goal, scope, acceptance criteria, and status. Mirrors the Roadmap in the [README](README.md). Status: ✅ done · 🚧 in progress · ⬜ planned.
 
 > Scope boundary for the MVP: **note-level** clinical → FHIR extraction (one note → de-identified, coded, schema-valid FHIR). Cross-document reconciliation, full patient records, DPO, and a hosted demo are deferred.
 
@@ -9,7 +9,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 ## US-1 — Spec-first scaffold + eval harness ✅
 **As** an ML engineer, **I want** a cloneable scaffold and an eval harness that scores a clinical→FHIR extraction, **so that** every later story has a reproducible, objective oracle.
 
-- **Scope:** `CLAUDE.md`/`PROJECT.md`/`SPEC.md`, extraction-case JSON schema + Pydantic, example case + prediction fixture; Python harness: FHIR validity (version-pinned) → resource P/R/F1 + field accuracy → de-id recall → optional clinical judge → aggregate → JSON report.
+- **Scope:** `CLAUDE.md` + `docs/SPEC.md`, extraction-case JSON schema + Pydantic, example case + prediction fixture; Python harness: FHIR validity (version-pinned) → resource P/R/F1 + field accuracy → de-id recall → optional clinical judge → aggregate → JSON report.
 - **Acceptance:**
   - [x] `python -m evals.cli <case> [--pred <pred>]` produces a scored `report.json`.
   - [x] FHIR validity is a real gate (strict via `fhir.resources`, graceful fallback); de-id recall is a safety gate (≥ 0.95).

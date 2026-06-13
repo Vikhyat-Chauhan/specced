@@ -23,6 +23,10 @@ evals = [
 data = [
     "faker>=24.0",
 ]
+# Dev tooling: tests.
+dev = [
+    "pytest>=8.0",
+]
 # Heavy ML deps kept separate so the data/agent side stays lightweight to install.
 train = [
     "unsloth",
@@ -49,3 +53,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["cli", "data", "agent", "rag", "serve", "evals"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
