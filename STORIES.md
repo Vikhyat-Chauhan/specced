@@ -19,15 +19,16 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-2 — Data pipeline: Synthea + teacher reject-sampling ⬜
-**As** an ML engineer, **I want** a PHI-safe `note → FHIR` dataset built by filtering a teacher through the eval harness, **so that** the fine-tune learns from outputs that pass our bar.
+## US-2 — Data pipeline: synthetic generator + Claude note-writer + reject-sampling ✅
+**As** an ML engineer, **I want** a PHI-safe `note → FHIR` dataset built by filtering through the eval harness, **so that** the fine-tune learns from faithful, learnable pairs.
 
-- **Scope:** Synthea generates synthetic patients (ground-truth FHIR); template clinical notes from them; Claude teacher extracts; keep only extractions that pass the harness (FHIR-valid + field-consistent); schema-validate, dedup, split into `train`/`val`/`held_out` jsonl.
+- **Scope:** a Python generator (`data/knowledge.py` curated KB with real RxNorm/ICD-10/SNOMED/LOINC codes + `data/generate.py`) builds synthetic patients → valid R4 gold FHIR + Faker PHI; `data/notes.py` writes a note (Claude note-writer, deterministic template fallback) with exact PHI spans; `data/filter.py` reject-samples (concept-presence → Claude teacher recovery scored by `evals.run_eval`); `data/build.py` dedups, splits, writes `train`/`val`/`held_out` jsonl. Training target is the **gold**; the teacher is the consistency filter.
 - **Acceptance:**
-  - [ ] Synthea → notes + gold FHIR cases across resource types.
-  - [ ] Teacher generation + reject-sampling → `data/curated/{train,val,held_out}.jsonl`.
-  - [ ] Each record carries case, prediction, eval result, provenance; teacher accept-rate logged.
-  - [ ] **No real PHI** anywhere.
+  - [x] Generator → notes + gold FHIR cases across Condition / MedicationStatement / Observation / AllergyIntolerance.
+  - [x] Reject-sampling (cheap + teacher) → `data/curated/{train,val,held_out}.jsonl`; accept-rate + reject reasons logged.
+  - [x] Each record carries case, teacher prediction, eval, provenance.
+  - [x] **No real PHI** (synthetic only); offline mode runs without an API key.
+  - [x] Verified: records load as `Case`, gold validates (strict R4), gold-as-prediction scores 1.0 through the eval CLI.
 - **Docs:** `data/README.md`.
 
 ---

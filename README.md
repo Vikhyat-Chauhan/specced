@@ -50,6 +50,19 @@ The money chart: run the held-out set across **base model vs fine-tuned vs Claud
 
 🚧 Week 3–4 MVP in progress. `STORIES.md` is the backlog; `SPEC.md` explains the extraction-case format; `PROJECT.md` has the architecture and decisions.
 
+## Roadmap
+
+Tracked user stories, in order (detail in [`STORIES.md`](STORIES.md)):
+
+- [x] **US-1** — Spec-first scaffold + eval harness (FHIR validity · field-F1 · de-id recall)
+- [x] **US-2** — Data pipeline: synthetic generator → Claude note-writer → reject-sampling → curated jsonl
+- [ ] **US-3** — QLoRA fine-tune (Qwen2.5-Coder-7B) + local serving + baseline evals
+- [ ] **US-4** — LangGraph agent: plan → retrieve → act → evaluate + self-refine
+- [ ] **US-5** — Terminology RAG (SNOMED / RxNorm / ICD-10 / LOINC)
+- [ ] **US-6** — Full eval pipeline + base-vs-fine-tuned-vs-Claude comparison + charts
+- [ ] **US-7** — CLI + scaffold polish
+- [ ] **US-8** — Write-up, blog series, demo
+
 ## Quickstart (WIP)
 
 ```bash

@@ -19,6 +19,10 @@ evals = [
     "fhir.resources>=8.0.0",
     "eval_type_backport; python_version < '3.10'",
 ]
+# Data pipeline: synthetic PHI generation. (anthropic is already a core dep.)
+data = [
+    "faker>=24.0",
+]
 # Heavy ML deps kept separate so the data/agent side stays lightweight to install.
 train = [
     "unsloth",
