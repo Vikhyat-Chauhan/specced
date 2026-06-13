@@ -1,0 +1,31 @@
+{
+  "phi_spans": [
+    { "text": "John Carter", "type": "NAME" },
+    { "text": "03/14/2024", "type": "DATE" }
+  ],
+  "resources": [
+    {
+      "resourceType": "Condition",
+      "subject": { "reference": "Patient/example" },
+      "clinicalStatus": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" }] },
+      "code": { "text": "hypertension" }
+    },
+    {
+      "resourceType": "MedicationStatement",
+      "status": "active",
+      "subject": { "reference": "Patient/example" },
+      "medicationCodeableConcept": { "text": "lisinopril" },
+      "dosage": [{ "text": "10 mg" }]
+    },
+    {
+      "resourceType": "Observation",
+      "status": "final",
+      "code": { "text": "blood pressure" },
+      "valueString": "148/92 mmHg"
+    },
+    {
+      "resourceType": "AllergyIntolerance",
+      "code": { "text": "penicillin" }
+    }
+  ]
+}

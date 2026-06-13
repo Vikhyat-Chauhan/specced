@@ -1,0 +1,40 @@
+{
+  "id": "cardio-visit-001",
+  "note": "Mr. John Carter, 67yo, seen 03/14/2024. Started lisinopril 10 mg daily for hypertension. BP today 148/92. Allergic to penicillin (rash).",
+  "fhir_version": "R4",
+  "target_resources": ["Condition", "MedicationStatement", "Observation", "AllergyIntolerance"],
+  "deidentify": true,
+  "gold": {
+    "phi_spans": [
+      { "text": "John Carter", "type": "NAME" },
+      { "text": "67", "type": "AGE" },
+      { "text": "03/14/2024", "type": "DATE" }
+    ],
+    "resources": [
+      {
+        "resourceType": "Condition",
+        "subject": { "reference": "Patient/example" },
+        "clinicalStatus": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" }] },
+        "code": { "text": "hypertension" }
+      },
+      {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": { "reference": "Patient/example" },
+        "medicationCodeableConcept": { "text": "lisinopril" },
+        "dosage": [{ "text": "10 mg daily" }]
+      },
+      {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": { "text": "blood pressure" },
+        "valueString": "148/92 mmHg"
+      },
+      {
+        "resourceType": "AllergyIntolerance",
+        "patient": { "reference": "Patient/example" },
+        "code": { "text": "penicillin" }
+      }
+    ]
+  }
+}

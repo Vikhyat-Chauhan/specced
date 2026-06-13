@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://specced.dev/schemas/case.schema.json",
+  "title": "Clinical Extraction Case",
+  "description": "A clinical note plus the extraction task and (optionally) the gold FHIR answer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "note"],
+  "properties": {
+    "id": { "type": "string", "description": "Stable case identifier." },
+    "note": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Free-text clinical note (input). Synthetic or de-identified only — never real PHI."
+    },
+    "fhir_version": {
+      "type": "string",
+      "enum": ["R4", "R4B", "R5"],
+      "default": "R4",
+      "description": "Target FHIR version."
+    },
+    "target_resources": {
+      "type": "array",
+      "description": "Resource types to extract; omit to extract all found.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Condition", "MedicationStatement", "MedicationRequest", "Observation",
+          "AllergyIntolerance", "Procedure", "Immunization", "DiagnosticReport",
+          "Encounter", "Patient", "FamilyMemberHistory"
+        ]
+      }
+    },
+    "deidentify": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the model must also return phi_spans and de-id recall is scored."
+    },
+    "gold": {
+      "type": "object",
+      "description": "Reference answer (required to score; omit for unlabeled inference).",
+      "additionalProperties": false,
+      "properties": {
+        "phi_spans": { "type": "array", "items": { "$ref": "#/$defs/phiSpan" } },
+        "resources": { "type": "array", "items": { "$ref": "#/$defs/fhirResource" } }
+      }
+    }
+  },
+  "$defs": {
+    "phiSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "type"],
+      "properties": {
+        "text": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": ["NAME", "DATE", "AGE", "LOCATION", "ID", "PHONE", "EMAIL", "ORG", "PROFESSION", "OTHER"],
+          "description": "HIPAA Safe Harbor category."
+        },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "fhirResource": {
+      "type": "object",
+      "description": "A FHIR resource. Structure is validated by the harness (fhir.resources), not this schema.",
+      "required": ["resourceType"],
+      "properties": { "resourceType": { "type": "string" } }
+    }
+  }
+}
