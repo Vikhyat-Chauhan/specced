@@ -1,0 +1,1073 @@
+{
+  "git_sha": "9391084",
+  "ts": "2026-06-15T06:26:57.864611+00:00",
+  "data": "data/curated/held_out.jsonl",
+  "adapter": "train/checkpoints/adapter",
+  "n": 20,
+  "variants": {
+    "Base": {
+      "n": 20,
+      "passed": 0,
+      "validity_rate": 0.932,
+      "resource_f1": 0.416,
+      "field_accuracy": 0.857,
+      "deid_recall": 0.85,
+      "avg_score": 0.627,
+      "avg_latency_ms": 29759.955
+    },
+    "Fine-tuned": {
+      "n": 20,
+      "passed": 20,
+      "validity_rate": 1.0,
+      "resource_f1": 0.992,
+      "field_accuracy": 0.98,
+      "deid_recall": 1.0,
+      "avg_score": 0.99,
+      "avg_latency_ms": 22708.35
+    },
+    "FT+Agent": {
+      "n": 20,
+      "passed": 20,
+      "validity_rate": 1.0,
+      "resource_f1": 1.0,
+      "field_accuracy": 1.0,
+      "deid_recall": 1.0,
+      "avg_score": 1.0,
+      "avg_latency_ms": 23221.365
+    }
+  },
+  "per_case": {
+    "base": [
+      {
+        "case_id": "case-00180",
+        "score": {
+          "score": 0.55,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.3,
+          "resource_recall": 0.3,
+          "resource_f1": 0.3,
+          "field_accuracy": 0.667,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 39800.1
+      },
+      {
+        "case_id": "case-00181",
+        "score": {
+          "score": 0.71,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.5,
+          "resource_recall": 0.5,
+          "resource_f1": 0.5,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 17361.1
+      },
+      {
+        "case_id": "case-00182",
+        "score": {
+          "score": 0.757,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.714,
+          "resource_recall": 0.714,
+          "resource_f1": 0.714,
+          "field_accuracy": 0.8,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 38781.6
+      },
+      {
+        "case_id": "case-00183",
+        "score": {
+          "score": 0.633,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.333,
+          "resource_recall": 0.222,
+          "resource_f1": 0.267,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 28740.4
+      },
+      {
+        "case_id": "case-00184",
+        "score": {
+          "score": 0.86,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.8,
+          "resource_recall": 0.8,
+          "resource_f1": 0.8,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 24250.1
+      },
+      {
+        "case_id": "case-00185",
+        "score": {
+          "score": 0.585,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.25,
+          "resource_recall": 0.25,
+          "resource_f1": 0.25,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 18865.9
+      },
+      {
+        "case_id": "case-00186",
+        "score": {
+          "score": 0.286,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 19683.4
+      },
+      {
+        "case_id": "case-00187",
+        "score": {
+          "score": 0.706,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.571,
+          "resource_recall": 0.571,
+          "resource_f1": 0.571,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.6,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.60 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 36059.1
+      },
+      {
+        "case_id": "case-00188",
+        "score": {
+          "score": 0.698,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.625,
+          "resource_recall": 0.625,
+          "resource_f1": 0.625,
+          "field_accuracy": 0.75,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 37982.7
+      },
+      {
+        "case_id": "case-00189",
+        "score": {
+          "score": 0.593,
+          "passed": false,
+          "validity_rate": 0.875,
+          "resource_precision": 0.25,
+          "resource_recall": 0.286,
+          "resource_f1": 0.267,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [
+            "AllergyIntolerance: AllergyIntolerance: missing required field 'patient'"
+          ],
+          "reasons": [
+            "1 invalid FHIR resource(s)",
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 41166.2
+      },
+      {
+        "case_id": "case-00190",
+        "score": {
+          "score": 0.71,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.5,
+          "resource_recall": 0.5,
+          "resource_f1": 0.5,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 30639.9
+      },
+      {
+        "case_id": "case-00191",
+        "score": {
+          "score": 0.693,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.75,
+          "resource_recall": 0.6,
+          "resource_f1": 0.667,
+          "field_accuracy": 0.667,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 22772.9
+      },
+      {
+        "case_id": "case-00192",
+        "score": {
+          "score": 0.562,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.125,
+          "resource_recall": 0.125,
+          "resource_f1": 0.125,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 35916.5
+      },
+      {
+        "case_id": "case-00193",
+        "score": {
+          "score": 0.571,
+          "passed": false,
+          "validity_rate": 0.6,
+          "resource_precision": 0.2,
+          "resource_recall": 0.111,
+          "resource_f1": 0.143,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [
+            "AllergyIntolerance: AllergyIntolerance: missing required field 'patient'",
+            "AllergyIntolerance: AllergyIntolerance: missing required field 'patient'"
+          ],
+          "reasons": [
+            "2 invalid FHIR resource(s)"
+          ]
+        },
+        "latency_ms": 29528.3
+      },
+      {
+        "case_id": "case-00194",
+        "score": {
+          "score": 0.348,
+          "passed": false,
+          "validity_rate": 0.375,
+          "resource_precision": 0.375,
+          "resource_recall": 0.375,
+          "resource_f1": 0.375,
+          "field_accuracy": 0.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [
+            "MedicationStatement: MedicationStatement: missing required field 'status'",
+            "MedicationStatement: MedicationStatement: missing required field 'status'",
+            "Observation: Observation: missing required field 'status'",
+            "Observation: Observation: missing required field 'status'",
+            "Observation: Observation: missing required field 'status'"
+          ],
+          "reasons": [
+            "5 invalid FHIR resource(s)",
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 28631.4
+      },
+      {
+        "case_id": "case-00195",
+        "score": {
+          "score": 0.71,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.5,
+          "resource_recall": 0.5,
+          "resource_f1": 0.5,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 38751.5
+      },
+      {
+        "case_id": "case-00196",
+        "score": {
+          "score": 0.627,
+          "passed": false,
+          "validity_rate": 0.8,
+          "resource_precision": 0.4,
+          "resource_recall": 0.286,
+          "resource_f1": 0.333,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [
+            "AllergyIntolerance: AllergyIntolerance: missing required field 'patient'"
+          ],
+          "reasons": [
+            "1 invalid FHIR resource(s)",
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 28528.8
+      },
+      {
+        "case_id": "case-00197",
+        "score": {
+          "score": 0.585,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.25,
+          "resource_recall": 0.25,
+          "resource_f1": 0.25,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20167.7
+      },
+      {
+        "case_id": "case-00198",
+        "score": {
+          "score": 0.571,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.25,
+          "resource_recall": 0.1,
+          "resource_f1": 0.143,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 20357.7
+      },
+      {
+        "case_id": "case-00199",
+        "score": {
+          "score": 0.78,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 0.4,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 37213.8
+      }
+    ],
+    "ft": [
+      {
+        "case_id": "case-00180",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 31937.3
+      },
+      {
+        "case_id": "case-00181",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 15489.0
+      },
+      {
+        "case_id": "case-00182",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 25431.9
+      },
+      {
+        "case_id": "case-00183",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 27129.2
+      },
+      {
+        "case_id": "case-00184",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 19059.5
+      },
+      {
+        "case_id": "case-00185",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 15362.2
+      },
+      {
+        "case_id": "case-00186",
+        "score": {
+          "score": 0.797,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 0.833,
+          "resource_recall": 0.833,
+          "resource_f1": 0.833,
+          "field_accuracy": 0.6,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 20622.0
+      },
+      {
+        "case_id": "case-00187",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 24783.0
+      },
+      {
+        "case_id": "case-00188",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 26055.8
+      },
+      {
+        "case_id": "case-00189",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 20800.0
+      },
+      {
+        "case_id": "case-00190",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 21979.1
+      },
+      {
+        "case_id": "case-00191",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 17316.9
+      },
+      {
+        "case_id": "case-00192",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 25323.7
+      },
+      {
+        "case_id": "case-00193",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 25300.1
+      },
+      {
+        "case_id": "case-00194",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 28142.8
+      },
+      {
+        "case_id": "case-00195",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 25495.7
+      },
+      {
+        "case_id": "case-00196",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 21649.5
+      },
+      {
+        "case_id": "case-00197",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 16618.4
+      },
+      {
+        "case_id": "case-00198",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 27388.8
+      },
+      {
+        "case_id": "case-00199",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 18282.1
+      }
+    ],
+    "agent": [
+      {
+        "case_id": "case-00180",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 32731.6,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00181",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 15733.1,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00182",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 24988.3,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00183",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 26198.4,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00184",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 19770.4,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00185",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 15896.9,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00186",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 22621.2,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00187",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 24700.4,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00188",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 25239.6,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00189",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 21566.0,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00190",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 21887.7,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00191",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 17958.4,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00192",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 26230.1,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00193",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 26250.2,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00194",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 29165.8,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00195",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 26468.3,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00196",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 22346.0,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00197",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 17253.1,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00198",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 28384.8,
+        "refine_count": 1
+      },
+      {
+        "case_id": "case-00199",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 19037.0,
+        "refine_count": 1
+      }
+    ]
+  }
+}
