@@ -9,8 +9,12 @@ in a way that's readable for a live demo or screen recording.
 from __future__ import annotations
 
 import argparse
-import json
 import os
+import sys
+
+# Ensure project root is on sys.path when run as a script.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import json
 import time
 
 DEMO_NOTE = """Elizabeth Brown, a 67-year-old patient (MRN 47898562), was seen on 07/16/2024.

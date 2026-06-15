@@ -23,7 +23,9 @@ def run(state: AgentState) -> AgentState:
     errors = list(score.invalid_resources) + list(score.reasons)
     error_ctx = "\n".join(f"- {e}" for e in errors) if errors else ""
 
-    done = score.passed or refine_count >= state["max_refines"]
+    # No gold → can't improve; exit after first attempt.
+    no_gold = state["case"].gold is None
+    done = score.passed or refine_count >= state["max_refines"] or no_gold
 
     print(
         f"[eval] score={score.score:.3f} passed={score.passed} "
