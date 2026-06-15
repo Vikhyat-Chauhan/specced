@@ -33,7 +33,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-3 — QLoRA fine-tune + serving + baseline evals ⬜
+## US-3 — QLoRA fine-tune + serving + baseline evals 🚧
 **As** an ML engineer, **I want** to QLoRA-fine-tune Qwen2.5-Coder-7B on `note → FHIR` pairs, serve it locally, and benchmark base-vs-fine-tuned, **so that** I demonstrate a compliant on-prem extraction model.
 
 - **Scope:** Unsloth + TRL QLoRA (NF4) on 16GB; W&B; export GGUF; Ollama; run the held-out set on base vs fine-tuned.
@@ -41,6 +41,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
   - [ ] Training run with decreasing loss logged to W&B; GGUF exported + served.
   - [ ] Served model extracts FHIR for a sample note.
   - [ ] Comparison table: base vs fine-tuned on validity / resource-F1 / field accuracy / de-id recall.
+- **Scaffolded:** `train/prompt.py`, `train/train_qlora.py`, `train/configs/default.yaml`, `train/export_gguf.py`, `serve/client.py`, `serve/Modelfile`, `evals/benchmark.py`.
 - **Docs:** `train/README.md`, `serve/README.md`.
 
 ---
