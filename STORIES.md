@@ -80,7 +80,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-7 — CLI + scaffold polish ⬜
+## US-7 — CLI + scaffold polish 🚧
 **As** a cloner, **I want** `specced extract ./note.txt` and a clean quickstart, **so that** I can run extraction end-to-end from a fresh checkout.
 
 - **Scope:** `cli/` (`specced extract` / `specced eval`); tighten the cloneable scaffold.
