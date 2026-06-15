@@ -32,8 +32,8 @@ from evals.case import Prediction
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 SPECCED_MODEL = os.environ.get("SPECCED_MODEL", "specced-qwen7b")
 _BASE_MODEL = "Qwen/Qwen2.5-Coder-7B-Instruct"
-_MAX_SEQ_LEN = 2048
-_MAX_NEW_TOKENS = 1024
+_MAX_SEQ_LEN = 4096
+_MAX_NEW_TOKENS = 2048
 
 
 @dataclass
@@ -144,14 +144,20 @@ class HFBackend:
 
     # -- inference --
 
-    def extract(self, note: str, target_resources: list[str]) -> GenerationResult:
+    def extract(
+        self,
+        note: str,
+        target_resources: list[str],
+        *,
+        prompt_override: Optional[str] = None,
+    ) -> GenerationResult:
         if self._model is None:
             raise RuntimeError("HFBackend not loaded — use as a context manager or call .load() first.")
 
         import torch
         from train.prompt import format_inference_prompt
 
-        prompt = format_inference_prompt(note, target_resources)
+        prompt = prompt_override or format_inference_prompt(note, target_resources)
         inputs = self._tokenizer(prompt, return_tensors="pt").to(self._model.device)
         input_len = inputs["input_ids"].shape[1]
 

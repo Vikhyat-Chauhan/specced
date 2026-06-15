@@ -1,0 +1,526 @@
+{
+  "git_sha": "128a862",
+  "ts": "2026-06-15T05-58-59",
+  "case_id": "case-00180",
+  "adapter": "train/checkpoints/adapter",
+  "max_refines": 3,
+  "refine_count": 1,
+  "eval_score": {
+    "score": 1.0,
+    "passed": true,
+    "validity_rate": 1.0,
+    "resource_precision": 1.0,
+    "resource_recall": 1.0,
+    "resource_f1": 1.0,
+    "field_accuracy": 1.0,
+    "deid_recall": 1.0,
+    "invalid_resources": [],
+    "reasons": []
+  },
+  "prediction": {
+    "phi_spans": [
+      {
+        "text": "Elizabeth Brown",
+        "type": "NAME",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "text": "67",
+        "type": "AGE",
+        "start": 19,
+        "end": 21
+      },
+      {
+        "text": "07/16/2024",
+        "type": "DATE",
+        "start": 66,
+        "end": 76
+      },
+      {
+        "text": "47898562",
+        "type": "ID",
+        "start": 44,
+        "end": 52
+      },
+      {
+        "text": "575-326-0332",
+        "type": "PHONE",
+        "start": 87,
+        "end": 99
+      }
+    ],
+    "resources": [
+      {
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/example"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E11.9",
+              "display": "type 2 diabetes mellitus"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44054006",
+              "display": "type 2 diabetes mellitus"
+            }
+          ],
+          "text": "type 2 diabetes mellitus"
+        }
+      },
+      {
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/example"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K21.9",
+              "display": "gastroesophageal reflux disease"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "235595009",
+              "display": "gastroesophageal reflux disease"
+            }
+          ],
+          "text": "gastroesophageal reflux disease"
+        }
+      },
+      {
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/example"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.91",
+              "display": "atrial fibrillation"
+            }
+          ],
+          "text": "atrial fibrillation"
+        }
+      },
+      {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/example"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "6809",
+              "display": "metformin"
+            }
+          ],
+          "text": "metformin"
+        },
+        "dosage": [
+          {
+            "text": "850 mg daily"
+          }
+        ]
+      },
+      {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/example"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "6918",
+              "display": "metoprolol"
+            }
+          ],
+          "text": "metoprolol"
+        },
+        "dosage": [
+          {
+            "text": "50 mg twice daily"
+          }
+        ]
+      },
+      {
+        "resourceType": "MedicationStatement",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/example"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1191",
+              "display": "aspirin"
+            }
+          ],
+          "text": "aspirin"
+        },
+        "dosage": [
+          {
+            "text": "81 mg daily"
+          }
+        ]
+      },
+      {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "hemoglobin A1c"
+            }
+          ],
+          "text": "hemoglobin A1c"
+        },
+        "valueQuantity": {
+          "value": 6.0,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      },
+      {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3016-3",
+              "display": "thyroid stimulating hormone"
+            }
+          ],
+          "text": "thyroid stimulating hormone"
+        },
+        "valueQuantity": {
+          "value": 6.3,
+          "unit": "mIU/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "m[IU]/L"
+        }
+      },
+      {
+        "resourceType": "AllergyIntolerance",
+        "patient": {
+          "reference": "Patient/example"
+        },
+        "code": {
+          "text": "shellfish"
+        }
+      },
+      {
+        "resourceType": "AllergyIntolerance",
+        "patient": {
+          "reference": "Patient/example"
+        },
+        "code": {
+          "text": "penicillin"
+        }
+      }
+    ]
+  },
+  "eval_report": {
+    "case_id": "case-00180",
+    "score": {
+      "score": 1.0,
+      "passed": true,
+      "validity_rate": 1.0,
+      "resource_precision": 1.0,
+      "resource_recall": 1.0,
+      "resource_f1": 1.0,
+      "field_accuracy": 1.0,
+      "deid_recall": 1.0,
+      "invalid_resources": [],
+      "reasons": []
+    },
+    "judge": null,
+    "prediction": {
+      "phi_spans": [
+        {
+          "text": "Elizabeth Brown",
+          "type": "NAME",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "text": "67",
+          "type": "AGE",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "text": "07/16/2024",
+          "type": "DATE",
+          "start": 66,
+          "end": 76
+        },
+        {
+          "text": "47898562",
+          "type": "ID",
+          "start": 44,
+          "end": 52
+        },
+        {
+          "text": "575-326-0332",
+          "type": "PHONE",
+          "start": 87,
+          "end": 99
+        }
+      ],
+      "resources": [
+        {
+          "resourceType": "Condition",
+          "subject": {
+            "reference": "Patient/example"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active"
+              }
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "E11.9",
+                "display": "type 2 diabetes mellitus"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "44054006",
+                "display": "type 2 diabetes mellitus"
+              }
+            ],
+            "text": "type 2 diabetes mellitus"
+          }
+        },
+        {
+          "resourceType": "Condition",
+          "subject": {
+            "reference": "Patient/example"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active"
+              }
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "K21.9",
+                "display": "gastroesophageal reflux disease"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "235595009",
+                "display": "gastroesophageal reflux disease"
+              }
+            ],
+            "text": "gastroesophageal reflux disease"
+          }
+        },
+        {
+          "resourceType": "Condition",
+          "subject": {
+            "reference": "Patient/example"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active"
+              }
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I48.91",
+                "display": "atrial fibrillation"
+              }
+            ],
+            "text": "atrial fibrillation"
+          }
+        },
+        {
+          "resourceType": "MedicationStatement",
+          "status": "active",
+          "subject": {
+            "reference": "Patient/example"
+          },
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "6809",
+                "display": "metformin"
+              }
+            ],
+            "text": "metformin"
+          },
+          "dosage": [
+            {
+              "text": "850 mg daily"
+            }
+          ]
+        },
+        {
+          "resourceType": "MedicationStatement",
+          "status": "active",
+          "subject": {
+            "reference": "Patient/example"
+          },
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "6918",
+                "display": "metoprolol"
+              }
+            ],
+            "text": "metoprolol"
+          },
+          "dosage": [
+            {
+              "text": "50 mg twice daily"
+            }
+          ]
+        },
+        {
+          "resourceType": "MedicationStatement",
+          "status": "active",
+          "subject": {
+            "reference": "Patient/example"
+          },
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1191",
+                "display": "aspirin"
+              }
+            ],
+            "text": "aspirin"
+          },
+          "dosage": [
+            {
+              "text": "81 mg daily"
+            }
+          ]
+        },
+        {
+          "resourceType": "Observation",
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "4548-4",
+                "display": "hemoglobin A1c"
+              }
+            ],
+            "text": "hemoglobin A1c"
+          },
+          "valueQuantity": {
+            "value": 6.0,
+            "unit": "%",
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
+          }
+        },
+        {
+          "resourceType": "Observation",
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "3016-3",
+                "display": "thyroid stimulating hormone"
+              }
+            ],
+            "text": "thyroid stimulating hormone"
+          },
+          "valueQuantity": {
+            "value": 6.3,
+            "unit": "mIU/L",
+            "system": "http://unitsofmeasure.org",
+            "code": "m[IU]/L"
+          }
+        },
+        {
+          "resourceType": "AllergyIntolerance",
+          "patient": {
+            "reference": "Patient/example"
+          },
+          "code": {
+            "text": "shellfish"
+          }
+        },
+        {
+          "resourceType": "AllergyIntolerance",
+          "patient": {
+            "reference": "Patient/example"
+          },
+          "code": {
+            "text": "penicillin"
+          }
+        }
+      ]
+    },
+    "provenance": {
+      "git_sha": "128a862",
+      "ts": "2026-06-15T05:58:59.692681+00:00",
+      "harness_version": "0.2.0",
+      "fhir_validator": "fallback"
+    }
+  }
+}
