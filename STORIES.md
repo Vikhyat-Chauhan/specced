@@ -69,7 +69,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-6 — Full eval pipeline + comparison + charts ⬜
+## US-6 — Full eval pipeline + comparison + charts 🚧
 **As** an AI engineer, **I want** the base-vs-FT-vs-Claude comparison with charts, **so that** the project has its centerpiece result.
 
 - **Scope:** clinical judge across the held-out set for all three systems; efficiency metrics (tokens/latency/$ per note); comparison table + charts.
