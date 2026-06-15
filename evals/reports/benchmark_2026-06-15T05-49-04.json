@@ -1,0 +1,786 @@
+{
+  "git_sha": "128a862",
+  "ts": "2026-06-15T05:49:04.405013+00:00",
+  "data": "data/curated/held_out.jsonl",
+  "adapter": "train/checkpoints/adapter",
+  "n": 20,
+  "base": {
+    "aggregate": {
+      "n": 20,
+      "passed": 0,
+      "validity_rate": 0.917,
+      "resource_f1": 0.05,
+      "field_accuracy": 0.833,
+      "deid_recall": 0.12,
+      "avg_score": 0.086,
+      "avg_latency_ms": 19113.73
+    },
+    "per_case": [
+      {
+        "case_id": "case-00180",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19960.0,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00181",
+        "score": {
+          "score": 0.56,
+          "passed": false,
+          "validity_rate": 0.75,
+          "resource_precision": 0.5,
+          "resource_recall": 0.5,
+          "resource_f1": 0.5,
+          "field_accuracy": 0.5,
+          "deid_recall": 0.8,
+          "invalid_resources": [
+            "MedicationStatement: MedicationStatement: missing required field 'status'"
+          ],
+          "reasons": [
+            "1 invalid FHIR resource(s)",
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 17023.3,
+        "tokens_used": 911
+      },
+      {
+        "case_id": "case-00182",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19616.4,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00183",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19373.0,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00184",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19238.3,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00185",
+        "score": {
+          "score": 0.585,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.25,
+          "resource_recall": 0.25,
+          "resource_f1": 0.25,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 17130.4,
+        "tokens_used": 917
+      },
+      {
+        "case_id": "case-00186",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 18817.2,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00187",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 18837.9,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00188",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 18878.3,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00189",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 18883.8,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00190",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 18841.8,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00191",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19636.5,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00192",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20034.5,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00193",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19917.0,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00194",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19721.1,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00195",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19753.4,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00196",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19650.8,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00197",
+        "score": {
+          "score": 0.585,
+          "passed": false,
+          "validity_rate": 1.0,
+          "resource_precision": 0.25,
+          "resource_recall": 0.25,
+          "resource_f1": 0.25,
+          "field_accuracy": 1.0,
+          "deid_recall": 0.8,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.80 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 17973.2,
+        "tokens_used": 951
+      },
+      {
+        "case_id": "case-00198",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19690.1,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00199",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 19297.6,
+        "tokens_used": 1024
+      }
+    ]
+  },
+  "ft": {
+    "aggregate": {
+      "n": 20,
+      "passed": 6,
+      "validity_rate": 1.0,
+      "resource_f1": 0.3,
+      "field_accuracy": 1.0,
+      "deid_recall": 0.3,
+      "avg_score": 0.3,
+      "avg_latency_ms": 19613.105
+    },
+    "per_case": [
+      {
+        "case_id": "case-00180",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20851.1,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00181",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 15151.3,
+        "tokens_used": 777
+      },
+      {
+        "case_id": "case-00182",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20250.7,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00183",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20306.4,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00184",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 19074.1,
+        "tokens_used": 969
+      },
+      {
+        "case_id": "case-00185",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 15363.1,
+        "tokens_used": 788
+      },
+      {
+        "case_id": "case-00186",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20224.2,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00187",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20258.6,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00188",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20622.4,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00189",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 21116.8,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00190",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20736.6,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00191",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 17728.1,
+        "tokens_used": 882
+      },
+      {
+        "case_id": "case-00192",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20552.2,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00193",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20278.3,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00194",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20282.3,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00195",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 21133.2,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00196",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 20727.9,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00197",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 17434.2,
+        "tokens_used": 851
+      },
+      {
+        "case_id": "case-00198",
+        "score": {
+          "score": 0.0,
+          "passed": false,
+          "validity_rate": null,
+          "resource_precision": 0.0,
+          "resource_recall": 0.0,
+          "resource_f1": 0.0,
+          "field_accuracy": null,
+          "deid_recall": 0.0,
+          "invalid_resources": [],
+          "reasons": [
+            "de-id recall 0.00 < 0.95 (missed PHI)"
+          ]
+        },
+        "latency_ms": 21096.6,
+        "tokens_used": 1024
+      },
+      {
+        "case_id": "case-00199",
+        "score": {
+          "score": 1.0,
+          "passed": true,
+          "validity_rate": 1.0,
+          "resource_precision": 1.0,
+          "resource_recall": 1.0,
+          "resource_f1": 1.0,
+          "field_accuracy": 1.0,
+          "deid_recall": 1.0,
+          "invalid_resources": [],
+          "reasons": []
+        },
+        "latency_ms": 19074.0,
+        "tokens_used": 931
+      }
+    ]
+  }
+}

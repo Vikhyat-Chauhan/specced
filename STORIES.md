@@ -33,7 +33,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-3 — QLoRA fine-tune + serving + baseline evals ⬜
+## US-3 — QLoRA fine-tune + serving + baseline evals 🚧
 **As** an ML engineer, **I want** to QLoRA-fine-tune Qwen2.5-Coder-7B on `note → FHIR` pairs, serve it locally, and benchmark base-vs-fine-tuned, **so that** I demonstrate a compliant on-prem extraction model.
 
 - **Scope:** Unsloth + TRL QLoRA (NF4) on 16GB; W&B; export GGUF; Ollama; run the held-out set on base vs fine-tuned.
@@ -41,11 +41,12 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
   - [ ] Training run with decreasing loss logged to W&B; GGUF exported + served.
   - [ ] Served model extracts FHIR for a sample note.
   - [ ] Comparison table: base vs fine-tuned on validity / resource-F1 / field accuracy / de-id recall.
+- **Scaffolded:** `train/prompt.py`, `train/train_qlora.py`, `train/configs/default.yaml`, `train/export_gguf.py`, `serve/client.py`, `serve/Modelfile`, `evals/benchmark.py`.
 - **Docs:** `train/README.md`, `serve/README.md`.
 
 ---
 
-## US-4 — LangGraph agent: plan → retrieve → act → evaluate + self-refine ⬜
+## US-4 — LangGraph agent: plan → retrieve → act → evaluate + self-refine 🚧
 **As** a user, **I want** an agent that extracts, validates, and refines on FHIR errors, **so that** output validity and accuracy beat a single shot.
 
 - **Scope:** LangGraph graph; `act` = fine-tuned model; `evaluate` = the harness; on FHIR validation/eval failure, feed errors back to `act` (≤ N iterations).
@@ -56,7 +57,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-5 — Terminology RAG ⬜
+## US-5 — Terminology RAG 🚧
 **As** the agent, **I want** to retrieve standard codes during `retrieve`, **so that** extracted concepts are correctly coded (SNOMED/RxNorm/ICD-10/LOINC).
 
 - **Scope:** embed + vector store over terminology concepts (loaded from the user's licensed local copy); wire into the `retrieve` node so `act` can bind codes.
@@ -68,7 +69,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-6 — Full eval pipeline + comparison + charts ⬜
+## US-6 — Full eval pipeline + comparison + charts 🚧
 **As** an AI engineer, **I want** the base-vs-FT-vs-Claude comparison with charts, **so that** the project has its centerpiece result.
 
 - **Scope:** clinical judge across the held-out set for all three systems; efficiency metrics (tokens/latency/$ per note); comparison table + charts.
@@ -79,7 +80,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-7 — CLI + scaffold polish ⬜
+## US-7 — CLI + scaffold polish 🚧
 **As** a cloner, **I want** `specced extract ./note.txt` and a clean quickstart, **so that** I can run extraction end-to-end from a fresh checkout.
 
 - **Scope:** `cli/` (`specced extract` / `specced eval`); tighten the cloneable scaffold.
@@ -89,7 +90,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-8 — Write-up, blog series, demo ⬜
+## US-8 — Write-up, blog series, demo ✅
 **As** a job-seeker, **I want** metrics, charts, blog posts, and a recorded demo, **so that** the project is interview- and portfolio-ready for health-AI AI-Engineer roles.
 
 - **Scope:** blog angles (reject-sampling; QLoRA on 16GB; "how do you eval FHIR extraction?"; self-refine on schema errors; local-vs-Claude on cost/latency/privacy; de-id recall as a safety metric); charts; demo.

@@ -1,0 +1,2277 @@
+{
+  "git_sha": "45974e4",
+  "ts": "2026-06-15T15:11:45.917111+00:00",
+  "n": 50,
+  "adapter": "train/checkpoints/adapter",
+  "results": {
+    "Base model": [
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 42977.3,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Term pregnancy\",\n      \"type\": \"CONDITION\",\n      \"start\": 18,\n      \"end\": 30\n    },\n    {\n      \"text\": \"Desires permanent sterilization\",\n      \"type"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 1986,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 610.7,
+        "tokens_used": 19,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [],\n  \"resources\": []\n}\n```"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Procedure": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "CONDITION": 1,
+          "PROCEDURE": 2
+        },
+        "latency_ms": 14571.9,
+        "tokens_used": 747,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Right hallux abductovalgus deformity\",\n      \"type\": \"CONDITION\",\n      \"start\": 17,\n      \"end\": 48\n    },\n    {\n      \"text\": \"Right McBride bunionect"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 1521,
+        "n_resources": 2,
+        "n_valid": 2,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Procedure": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "PROFESSION": 1,
+          "OTHER": 1
+        },
+        "latency_ms": 9835.7,
+        "tokens_used": 527,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Dr. Xyz\",\n      \"type\": \"PROFESSION\",\n      \"start\": 75,\n      \"end\": 80\n    },\n    {\n      \"text\": \"#4-French\",\n      \"type\": \"OTHER\",\n      \"start\": 9"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 3,
+        "n_invalid": 1,
+        "validity_rate": 0.75,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1,
+          "AllergyIntolerance": 1
+        },
+        "invalid_errors": [
+          "MedicationStatement: MedicationStatement: missing required field 'subject'"
+        ],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "NAME": 1,
+          "AGE": 1,
+          "PROBLEM": 1,
+          "MEDICATION": 2,
+          "ACTIVITY": 1,
+          "CONDITION": 1
+        },
+        "latency_ms": 24006.4,
+        "tokens_used": 1239,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Patient\",\n      \"type\": \"NAME\",\n      \"start\": 17,\n      \"end\": 23\n    },\n    {\n      \"text\": \"13 years old\",\n      \"type\": \"AGE\",\n      \"start\": 24,\n  "
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Procedure": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "CONDITION": 2,
+          "PROCEDURE": 2
+        },
+        "latency_ms": 15638.5,
+        "tokens_used": 820,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Metatarsus primus varus with bunion deformity\",\n      \"type\": \"CONDITION\",\n      \"start\": 17,\n      \"end\": 63\n    },\n    {\n      \"text\": \"Hallux abducto"
+      },
+      {
+        "specialty": "Hematology - Oncology",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "LOCATION": 2,
+          "DIagnosis": 1,
+          "PROCEDURE": 1,
+          "OTHER": 1
+        },
+        "latency_ms": 12804.6,
+        "tokens_used": 676,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Left neck\",\n      \"type\": \"LOCATION\",\n      \"start\": 3,\n      \"end\": 9\n    },\n    {\n      \"text\": \"Squamous cell carcinoma\",\n      \"type\": \"DIagnosis\",\n"
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 7,
+        "n_valid": 7,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Procedure": 5
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "CONDITION": 2,
+          "ANESTHESIA": 1,
+          "PREPARATION": 1
+        },
+        "latency_ms": 21760.8,
+        "tokens_used": 1122,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Right lumbosacral radiculopathy\",\n      \"type\": \"CONDITION\",\n      \"start\": 19,\n      \"end\": 47\n    },\n    {\n      \"text\": \"lumbar spondylolysis\",\n     "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 41721.1,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Persistent cough\",\n      \"type\": \"CONDITION\",\n      \"start\": 8,\n      \"end\": 20\n    },\n    {\n      \"text\": \"sputum\",\n      \"type\": \"CONDITION\",\n      \"s"
+      },
+      {
+        "specialty": "Neurology",
+        "note_chars": 531,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "PROCEDURE": 1,
+          "BODY_SITE": 1
+        },
+        "latency_ms": 1792.3,
+        "tokens_used": 95,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"CT cervical spine\",\n      \"type\": \"PROCEDURE\",\n      \"start\": 6,\n      \"end\": 23\n    },\n    {\n      \"text\": \"cervical spine\",\n      \"type\": \"BODY_SITE\","
+      },
+      {
+        "specialty": "Radiology",
+        "note_chars": 1435,
+        "n_resources": 5,
+        "n_valid": 3,
+        "n_invalid": 2,
+        "validity_rate": 0.6,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 2
+        },
+        "invalid_errors": [
+          "Observation: Observation: missing required field 'status'",
+          "Observation: Observation: missing required field 'status'"
+        ],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "MEDICATION": 2
+        },
+        "latency_ms": 16048.9,
+        "tokens_used": 853,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Omnipaque IV\",\n      \"type\": \"MEDICATION\",\n      \"start\": 87,\n      \"end\": 93\n    },\n    {\n      \"text\": \"ReadiCAT\",\n      \"type\": \"MEDICATION\",\n      \""
+      },
+      {
+        "specialty": "Pain Management",
+        "note_chars": 1275,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "LOCATION": 3,
+          "PROFESSION": 1,
+          "ORG": 3
+        },
+        "latency_ms": 5346.4,
+        "tokens_used": 287,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Right sacral alar notch\",\n      \"type\": \"LOCATION\",\n      \"start\": 8,\n      \"end\": 26\n    },\n    {\n      \"text\": \"sacroiliac joint\",\n      \"type\": \"LOCA"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Observation": 1,
+          "MedicationStatement": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 23,
+        "phi_types": {
+          "CONDITION": 9,
+          "DRUG": 14
+        },
+        "latency_ms": 25748.6,
+        "tokens_used": 1310,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\"text\": \"CHF\", \"type\": \"CONDITION\", \"start\": 11, \"end\": 13},\n    {\"text\": \"lymphedema\", \"type\": \"CONDITION\", \"start\": 14, \"end\": 24},\n    {\"text\": \"obesity\", \"type\": \"C"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1,
+          "AllergyIntolerance": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 12,
+        "phi_types": {
+          "CONDITION": 4,
+          "DATE": 2,
+          "LOCATION": 1,
+          "DRUG": 3,
+          "MEASUREMENT": 1,
+          "SITE": 1
+        },
+        "latency_ms": 17015.1,
+        "tokens_used": 882,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"mantle cell lymphoma\",\n      \"type\": \"CONDITION\",\n      \"start\": 11,\n      \"end\": 30\n    },\n    {\n      \"text\": \"September 2006\",\n      \"type\": \"DATE\",\n"
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 11,
+        "n_valid": 5,
+        "n_invalid": 6,
+        "validity_rate": 0.45454545454545453,
+        "resource_types": {
+          "Condition": 5
+        },
+        "invalid_errors": [
+          "MedicationStatement: MedicationStatement: missing required field 'status'",
+          "MedicationStatement: MedicationStatement: missing required field 'status'",
+          "Observation: Observation: missing required field 'status'"
+        ],
+        "n_phi_spans": 21,
+        "phi_types": {
+          "NAME": 1,
+          "LOCATION": 1,
+          "CONDITION": 5,
+          "MEDICATION": 4,
+          "ANATOMY": 3,
+          "TEST": 1,
+          "SYMPTOM": 5,
+          "PROCEDURE": 1
+        },
+        "latency_ms": 33308.6,
+        "tokens_used": 1670,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\"text\": \"Ms. XYZ\", \"type\": \"NAME\", \"start\": 3, \"end\": 8},\n    {\"text\": \"Richman, Roseburg resident\", \"type\": \"LOCATION\", \"start\": 10, \"end\": 28},\n    {\"text\": \"chronic "
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 5,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 2,
+          "MedicationStatement": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "CONDITION": 1,
+          "PROFESSION": 1,
+          "TEST": 1,
+          "DRUG": 2
+        },
+        "latency_ms": 21226.3,
+        "tokens_used": 1085,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Adenocarcinoma of the prostate\",\n      \"type\": \"CONDITION\",\n      \"start\": 16,\n      \"end\": 41\n    },\n    {\n      \"text\": \"Dr. X\",\n      \"type\": \"PROFES"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 1850,
+        "n_resources": 5,
+        "n_valid": 5,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Observation": 1,
+          "Procedure": 1,
+          "MedicationStatement": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "DIAGNOSIS": 4,
+          "PROCEDURE": 1,
+          "MEDICATION": 2
+        },
+        "latency_ms": 26205.7,
+        "tokens_used": 1345,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Malnutrition\",\n      \"type\": \"DIAGNOSIS\",\n      \"start\": 15,\n      \"end\": 36\n    },\n    {\n      \"text\": \"dysphagia\",\n      \"type\": \"DIAGNOSIS\",\n      \"s"
+      },
+      {
+        "specialty": "Lab Medicine - Pathology",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "AGE": 1,
+          "LOCATION": 2,
+          "CONDITION": 2
+        },
+        "latency_ms": 16083.8,
+        "tokens_used": 839,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"48-year-old\",\n      \"type\": \"AGE\",\n      \"start\": 9,\n      \"end\": 19\n    },\n    {\n      \"text\": \"right upper lobe\",\n      \"type\": \"LOCATION\",\n      \"sta"
+      },
+      {
+        "specialty": "Obstetrics / Gynecology",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 42029.9,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\"text\": \"Severe menometrorrhagia unresponsive to medical therapy.\", \"type\": \"CONDITION\", \"start\": 17, \"end\": 64},\n    {\"text\": \"Severe anemia.\", \"type\": \"CONDITION\", \"s"
+      },
+      {
+        "specialty": "Podiatry",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 21865.0,
+        "tokens_used": 1133,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Foreign body\",\n      \"type\": \"OTHER\",\n      \"start\": 23,\n      \"end\": 36\n    },\n    {\n      \"text\": \"right foot\",\n      \"type\": \"LOCATION\",\n      \"start"
+      },
+      {
+        "specialty": "Obstetrics / Gynecology",
+        "note_chars": 906,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "PROBLEM": 1,
+          "BODY_SITE": 3
+        },
+        "latency_ms": 16392.8,
+        "tokens_used": 881,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Pelvic pain\",\n      \"type\": \"PROBLEM\",\n      \"start\": 18,\n      \"end\": 28\n    },\n    {\n      \"text\": \"right ovary\",\n      \"type\": \"BODY_SITE\",\n      \"st"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 1839,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 41820.8,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"His brother\",\n      \"type\": \"NAME\",\n      \"start\": 1,\n      \"end\": 11\n    },\n    {\n      \"text\": \"vegetarian\",\n      \"type\": \"PROFESSION\",\n      \"start\""
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 5,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Procedure": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 14,
+        "phi_types": {
+          "CONDITION": 5,
+          "ANESTHESIA": 1,
+          "BLOOD_LOSS": 1,
+          "FLUIDS": 1,
+          "SPECIMEN": 1,
+          "TEST": 1,
+          "PATIENT_AGE": 1,
+          "LOCATION": 2,
+          "DATE": 1
+        },
+        "latency_ms": 24720.7,
+        "tokens_used": 1274,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"left atrophic mandibular fracture\",\n      \"type\": \"CONDITION\",\n      \"start\": 3,\n      \"end\": 26\n    },\n    {\n      \"text\": \"failed dental implant\",\n   "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Procedure": 1,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 10,
+        "phi_types": {
+          "CONDITION": 2,
+          "PROCEDURE": 1,
+          "ANESTHESIA": 1,
+          "TIME": 1,
+          "MEDICATION": 2,
+          "SYMPTOM": 1,
+          "DATE": 1,
+          "TEST": 1
+        },
+        "latency_ms": 23259.9,
+        "tokens_used": 1194,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Left patellar chondromalacia\",\n      \"type\": \"CONDITION\",\n      \"start\": 18,\n      \"end\": 44\n    },\n    {\n      \"text\": \"Left patellar chondromalacia wi"
+      },
+      {
+        "specialty": "Hematology - Oncology",
+        "note_chars": 2000,
+        "n_resources": 2,
+        "n_valid": 2,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "DIAGNOSIS": 1,
+          "LOCATION": 1,
+          "PROCEDURE": 1,
+          "ANESTHESIA": 1
+        },
+        "latency_ms": 10776.3,
+        "tokens_used": 560,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Metastatic papillary cancer\",\n      \"type\": \"DIAGNOSIS\",\n      \"start\": 25,\n      \"end\": 56\n    },\n    {\n      \"text\": \"left neck\",\n      \"type\": \"LOCAT"
+      },
+      {
+        "specialty": "Gastroenterology",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 8,
+        "phi_types": {
+          "CONDITION": 2,
+          "ANESTHESIA": 1,
+          "PROCEDURE": 1,
+          "MEDICATION": 1,
+          "OBSERVATION": 3
+        },
+        "latency_ms": 19803.3,
+        "tokens_used": 1013,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Acute appendicitis with perforation\",\n      \"type\": \"CONDITION\",\n      \"start\": 3,\n      \"end\": 29\n    },\n    {\n      \"text\": \"General\",\n      \"type\": \""
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "AGE": 1,
+          "OTHER": 4
+        },
+        "latency_ms": 16308.8,
+        "tokens_used": 832,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"50-year-old lady\",\n      \"type\": \"AGE\",\n      \"start\": 8,\n      \"end\": 20\n    },\n    {\n      \"text\": \"left anterior descending artery\",\n      \"type\": \"O"
+      },
+      {
+        "specialty": "Ophthalmology",
+        "note_chars": 1527,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "LOCATION": 1,
+          "MEDICATION": 1
+        },
+        "latency_ms": 14289.4,
+        "tokens_used": 742,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"right eye\",\n      \"type\": \"LOCATION\",\n      \"start\": 38,\n      \"end\": 44\n    },\n    {\n      \"text\": \"2% Xylocaine\",\n      \"type\": \"MEDICATION\",\n      \"s"
+      },
+      {
+        "specialty": "Urology",
+        "note_chars": 1506,
+        "n_resources": 2,
+        "n_valid": 2,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 18,
+        "phi_types": {
+          "CONDITION": 9,
+          "PROCEDURE": 7,
+          "TREATMENT": 1,
+          "DEVICE": 1
+        },
+        "latency_ms": 19713.6,
+        "tokens_used": 1021,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"prostate cancer\",\n      \"type\": \"CONDITION\",\n      \"start\": 23,\n      \"end\": 35\n    },\n    {\n      \"text\": \"radical prostatectomy\",\n      \"type\": \"PROCE"
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 1524,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 41732.7,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"CyberKnife\",\n      \"type\": \"ORG\",\n      \"start\": 11,\n      \"end\": 19\n    },\n    {\n      \"text\": \"right upper lobe stage IA non-small cell lung cancer\",\n"
+      },
+      {
+        "specialty": "Gastroenterology",
+        "note_chars": 1558,
+        "n_resources": 2,
+        "n_valid": 2,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "OTHER": 1,
+          "CONDITION": 1,
+          "PATIENT_AGE": 1,
+          "DEVICE": 1
+        },
+        "latency_ms": 11506.7,
+        "tokens_used": 617,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Abdominal mass\",\n      \"type\": \"OTHER\",\n      \"start\": 23,\n      \"end\": 35\n    },\n    {\n      \"text\": \"stage II endometrial carcinoma\",\n      \"type\": \"C"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1,
+          "Procedure": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 6,
+        "phi_types": {
+          "CONDITION": 1,
+          "ANATOMY": 3,
+          "PROCEDURE": 2
+        },
+        "latency_ms": 16791.3,
+        "tokens_used": 875,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Acute non-ST-elevation MI\",\n      \"type\": \"CONDITION\",\n      \"start\": 18,\n      \"end\": 45\n    },\n    {\n      \"text\": \"LAD\",\n      \"type\": \"ANATOMY\",\n   "
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 860,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "OTHER": 3
+        },
+        "latency_ms": 15059.8,
+        "tokens_used": 818,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Abnormal EKG\",\n      \"type\": \"OTHER\",\n      \"start\": 17,\n      \"end\": 23\n    },\n    {\n      \"text\": \"maximal heart rate of 146\",\n      \"type\": \"OTHER\",\n"
+      },
+      {
+        "specialty": "Cosmetic / Plastic Surgery",
+        "note_chars": 1853,
+        "n_resources": 6,
+        "n_valid": 5,
+        "n_invalid": 1,
+        "validity_rate": 0.8333333333333334,
+        "resource_types": {
+          "MedicationStatement": 3,
+          "Observation": 2
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'status'"
+        ],
+        "n_phi_spans": 6,
+        "phi_types": {
+          "PROCEDURE": 1,
+          "MEDICATION": 5
+        },
+        "latency_ms": 25119.0,
+        "tokens_used": 1292,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"BLEPHAROPLASTY\",\n      \"type\": \"PROCEDURE\",\n      \"start\": 0,\n      \"end\": 13\n    },\n    {\n      \"text\": \"Xylocaine\",\n      \"type\": \"MEDICATION\",\n      "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 1780,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Procedure": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 13,
+        "phi_types": {
+          "OTHER": 13
+        },
+        "latency_ms": 16918.9,
+        "tokens_used": 891,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\"text\": \"1 cm infraumbilical skin incision\", \"type\": \"OTHER\", \"start\": 8, \"end\": 36},\n    {\"text\": \"Veress needle\", \"type\": \"OTHER\", \"start\": 57, \"end\": 69},\n    {\"text"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Procedure": 2,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "DIAGNOSIS": 1,
+          "PROCEDURE": 3,
+          "ANESTHESIA": 1
+        },
+        "latency_ms": 16953.9,
+        "tokens_used": 888,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"squamous cell carcinoma\",\n      \"type\": \"DIAGNOSIS\",\n      \"start\": 27,\n      \"end\": 46\n    },\n    {\n      \"text\": \"radical vulvectomy (complete)\",\n    "
+      },
+      {
+        "specialty": "Pediatrics - Neonatal",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 2,
+        "n_invalid": 1,
+        "validity_rate": 0.6666666666666666,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [
+          "MedicationStatement: MedicationStatement: missing required field 'subject'"
+        ],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "NAME": 1,
+          "AGE": 1,
+          "OTHER": 1,
+          "MEDICATION": 2,
+          "ACTIVITY": 1,
+          "CONDITION": 1
+        },
+        "latency_ms": 18741.2,
+        "tokens_used": 978,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Patient\",\n      \"type\": \"NAME\",\n      \"start\": 17,\n      \"end\": 24\n    },\n    {\n      \"text\": \"13 years old\",\n      \"type\": \"AGE\",\n      \"start\": 25,\n  "
+      },
+      {
+        "specialty": "SOAP / Chart / Progress Notes",
+        "note_chars": 1983,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 42064.8,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\"text\": \"left upper lobectomy\", \"type\": \"PROCEDURE\", \"start\": 25, \"end\": 41},\n    {\"text\": \"stage IA non-small cell lung cancer\", \"type\": \"DIagnosis\", \"start\": 42, \"end"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 41732.4,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"rheumatoid arthritis\",\n      \"type\": \"CONDITION\",\n      \"start\": 13,\n      \"end\": 34\n    },\n    {\n      \"text\": \"aspirin\",\n      \"type\": \"ALLERGY\",\n    "
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 41618.1,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Aortic valve replacement\",\n      \"type\": \"PROCEDURE\",\n      \"start\": 17,\n      \"end\": 39\n    },\n    {\n      \"text\": \"Atrial valve replacement\",\n      \"t"
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1,
+          "AllergyIntolerance": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "AGE": 1,
+          "CONDITION": 2,
+          "FOOD": 1,
+          "DRINK": 1
+        },
+        "latency_ms": 11022.5,
+        "tokens_used": 583,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"46-year-old\",\n      \"type\": \"AGE\",\n      \"start\": 27,\n      \"end\": 35\n    },\n    {\n      \"text\": \"palpitations\",\n      \"type\": \"CONDITION\",\n      \"start"
+      },
+      {
+        "specialty": "General Medicine",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 6,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 3,
+          "Observation": 2,
+          "AllergyIntolerance": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 9,
+        "phi_types": {
+          "DRUG": 2,
+          "TEST": 2,
+          "CONDITION": 5
+        },
+        "latency_ms": 24951.4,
+        "tokens_used": 1282,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\"text\": \"Coumadin\", \"type\": \"DRUG\", \"start\": 17, \"end\": 23},\n    {\"text\": \"prothrombin time\", \"type\": \"TEST\", \"start\": 112, \"end\": 126},\n    {\"text\": \"INR\", \"type\": \"TE"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Procedure": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "NAME": 1,
+          "LOCATION": 1
+        },
+        "latency_ms": 14110.3,
+        "tokens_used": 739,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"The patient\",\n      \"type\": \"NAME\",\n      \"start\": 1,\n      \"end\": 10\n    },\n    {\n      \"text\": \"right eye\",\n      \"type\": \"LOCATION\",\n      \"start\": 6"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 41790.1,
+        "tokens_used": 2048,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Chondromalacia patella\",\n      \"type\": \"CONDITION\",\n      \"start\": 18,\n      \"end\": 40\n    },\n    {\n      \"text\": \"Patellofemoral malalignment syndrome\""
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 1382,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "CONDITION": 1,
+          "DATE": 1,
+          "LOCATION": 1
+        },
+        "latency_ms": 15469.3,
+        "tokens_used": 823,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Neck and lower back pain\",\n      \"type\": \"CONDITION\",\n      \"start\": 3,\n      \"end\": 27\n    },\n    {\n      \"text\": \"Date of incident: 1/15/2001\",\n      "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 988,
+        "n_resources": 5,
+        "n_valid": 5,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Procedure": 1,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "CONDITION": 1,
+          "PROCEDURE": 1,
+          "DEVICE": 1
+        },
+        "latency_ms": 23195.6,
+        "tokens_used": 1176,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Buttock abscess\",\n      \"type\": \"CONDITION\",\n      \"start\": 17,\n      \"end\": 30\n    },\n    {\n      \"text\": \"Incision and drainage (I&D) of buttock absce"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Observation": 1,
+          "MedicationStatement": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 18,
+        "phi_types": {
+          "CONDITION": 4,
+          "LOCATION": 1,
+          "MEDICATION": 2,
+          "AGE": 1,
+          "ETHNICITY": 1,
+          "PROFESSION": 1,
+          "SYMPTOM": 2,
+          "PERSON": 1,
+          "PLACE": 1,
+          "TEST": 2,
+          "ANATOMY": 1,
+          "PROCEDURE": 1
+        },
+        "latency_ms": 25811.0,
+        "tokens_used": 1290,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Acute deep venous thrombosis\",\n      \"type\": \"CONDITION\",\n      \"start\": 27,\n      \"end\": 58\n    },\n    {\n      \"text\": \"right lower extremity\",\n      \""
+      },
+      {
+        "specialty": "Emergency Room Reports",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 1,
+          "MedicationStatement": 1,
+          "AllergyIntolerance": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 20,
+        "phi_types": {
+          "ORG": 1,
+          "PATIENT": 1,
+          "CONDITION": 3,
+          "SYMPTOM": 4,
+          "PROFESSION": 1,
+          "TREATMENT": 1,
+          "DRUG": 8,
+          "TEST": 1
+        },
+        "latency_ms": 27974.3,
+        "tokens_used": 1379,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Children's Hospital\",\n      \"type\": \"ORG\",\n      \"start\": 3,\n      \"end\": 20\n    },\n    {\n      \"text\": \"5-year-old male\",\n      \"type\": \"PATIENT\",\n    "
+      },
+      {
+        "specialty": "Discharge Summary",
+        "note_chars": 2000,
+        "n_resources": 8,
+        "n_valid": 7,
+        "n_invalid": 1,
+        "validity_rate": 0.875,
+        "resource_types": {
+          "Condition": 5,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [
+          "AllergyIntolerance: AllergyIntolerance: missing required field 'patient'"
+        ],
+        "n_phi_spans": 10,
+        "phi_types": {
+          "CONDITION": 5,
+          "MEDICATION": 5
+        },
+        "latency_ms": 27203.0,
+        "tokens_used": 1370,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"Leiomyosarcoma\",\n      \"type\": \"CONDITION\",\n      \"start\": 14,\n      \"end\": 26\n    },\n    {\n      \"text\": \"History of pulmonary embolism\",\n      \"type\":"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 6,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 3,
+          "Procedure": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "LOCATION": 6,
+          "OTHER": 1
+        },
+        "latency_ms": 38213.9,
+        "tokens_used": 1879,
+        "raw_truncated": "```json\n{\n  \"phi_spans\": [\n    {\n      \"text\": \"left temple\",\n      \"type\": \"LOCATION\",\n      \"start\": 6,\n      \"end\": 14\n    },\n    {\n      \"text\": \"left nasolabial fold\",\n      \"type\": \"LOCATION\",\n "
+      }
+    ],
+    "Fine-tuned": [
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 2,
+        "n_invalid": 4,
+        "validity_rate": 0.3333333333333333,
+        "resource_types": {
+          "Condition": 2
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 6,
+        "phi_types": {
+          "CONDITION": 2,
+          "PROCEDURE": 4
+        },
+        "latency_ms": 20951.7,
+        "tokens_used": 1017,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Term pregnancy\",\n      \"type\": \"CONDITION\",\n      \"start\": 28,\n      \"end\": 41\n    },\n    {\n      \"text\": \"permanent sterilization\",\n      \"type\": \"CONDITION\",\n"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 1986,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "OTHER": 3
+        },
+        "latency_ms": 2709.4,
+        "tokens_used": 124,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Well developed\",\n      \"type\": \"OTHER\",\n      \"start\": 8,\n      \"end\": 20\n    },\n    {\n      \"text\": \"well nourished\",\n      \"type\": \"OTHER\",\n      \"start\": 23,"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 1,
+        "n_invalid": 2,
+        "validity_rate": 0.3333333333333333,
+        "resource_types": {
+          "Condition": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "CONDITION": 1,
+          "PROCEDURE": 2,
+          "ANESTHESIA": 1,
+          "HEMOSTASIS": 1
+        },
+        "latency_ms": 12828.2,
+        "tokens_used": 630,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Right hallux abductovalgus deformity\",\n      \"type\": \"CONDITION\",\n      \"start\": 26,\n      \"end\": 57\n    },\n    {\n      \"text\": \"Right McBride bunionectomy\",\n  "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 1521,
+        "n_resources": 3,
+        "n_valid": 2,
+        "n_invalid": 1,
+        "validity_rate": 0.6666666666666666,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "OTHER": 2,
+          "CONDITION": 1,
+          "PROFESSION": 1
+        },
+        "latency_ms": 11382.6,
+        "tokens_used": 568,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Permacath\",\n      \"type\": \"OTHER\",\n      \"start\": 9,\n      \"end\": 17\n    },\n    {\n      \"text\": \"Renal failure\",\n      \"type\": \"CONDITION\",\n      \"start\": 36,\n "
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 5,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 1,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "NAME": 1,
+          "AGE": 1
+        },
+        "latency_ms": 13564.3,
+        "tokens_used": 668,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Patient\",\n      \"type\": \"NAME\",\n      \"start\": 17,\n      \"end\": 24\n    },\n    {\n      \"text\": \"13\",\n      \"type\": \"AGE\",\n      \"start\": 28,\n      \"end\": 30\n    "
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 2,
+        "n_invalid": 3,
+        "validity_rate": 0.4,
+        "resource_types": {
+          "Condition": 2
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "CONDITION": 2,
+          "BODY_SITE": 2,
+          "PROCEDURE": 3
+        },
+        "latency_ms": 22075.5,
+        "tokens_used": 1070,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Metatarsus primus varus with bunion deformity\",\n      \"type\": \"CONDITION\",\n      \"start\": 23,\n      \"end\": 60\n    },\n    {\n      \"text\": \"right foot\",\n      \"ty"
+      },
+      {
+        "specialty": "Hematology - Oncology",
+        "note_chars": 2000,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "LOCATION": 2,
+          "CONDITION": 1,
+          "OTHER": 1
+        },
+        "latency_ms": 15685.8,
+        "tokens_used": 769,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"left neck\",\n      \"type\": \"LOCATION\",\n      \"start\": 26,\n      \"end\": 35\n    },\n    {\n      \"text\": \"left neck\",\n      \"type\": \"LOCATION\",\n      \"start\": 78,\n  "
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 8,
+        "n_valid": 3,
+        "n_invalid": 5,
+        "validity_rate": 0.375,
+        "resource_types": {
+          "Condition": 2,
+          "MedicationStatement": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 9,
+        "phi_types": {
+          "CONDITION": 2,
+          "PROCEDURE": 5,
+          "ANESTHESIA": 1,
+          "MEDICATION": 1
+        },
+        "latency_ms": 33503.3,
+        "tokens_used": 1582,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Right lumbosacral radiculopathy\",\n      \"type\": \"CONDITION\",\n      \"start\": 27,\n      \"end\": 54\n    },\n    {\n      \"text\": \"lumbar spondylolysis\",\n      \"type\":"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 44484.1,
+        "tokens_used": 2048,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Persistent cough\",\n      \"type\": \"CONDITION\",\n      \"start\": 8,\n      \"end\": 20\n    },\n    {\n      \"text\": \"sputum\",\n      \"type\": \"CONDITION\",\n      \"start\": 2"
+      },
+      {
+        "specialty": "Neurology",
+        "note_chars": 531,
+        "n_resources": 2,
+        "n_valid": 2,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "CONDITION": 2
+        },
+        "latency_ms": 8908.9,
+        "tokens_used": 460,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"cervical spine\",\n      \"type\": \"CONDITION\",\n      \"start\": 6,\n      \"end\": 18\n    },\n    {\n      \"text\": \"trauma\",\n      \"type\": \"CONDITION\",\n      \"start\": 37,"
+      },
+      {
+        "specialty": "Radiology",
+        "note_chars": 1435,
+        "n_resources": 11,
+        "n_valid": 11,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 2,
+          "Observation": 8
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "LOCATION": 2,
+          "OTHER": 1,
+          "REASON": 1
+        },
+        "latency_ms": 25881.3,
+        "tokens_used": 1263,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"abdomen\",\n      \"type\": \"LOCATION\",\n      \"start\": 3,\n      \"end\": 11\n    },\n    {\n      \"text\": \"pelvis\",\n      \"type\": \"LOCATION\",\n      \"start\": 14,\n      \"e"
+      },
+      {
+        "specialty": "Pain Management",
+        "note_chars": 1275,
+        "n_resources": 6,
+        "n_valid": 6,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "MedicationStatement": 2,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "OTHER": 5
+        },
+        "latency_ms": 20226.3,
+        "tokens_used": 1001,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Right sacral alar notch\",\n      \"type\": \"OTHER\",\n      \"start\": 9,\n      \"end\": 27\n    },\n    {\n      \"text\": \"sacroiliac joint\",\n      \"type\": \"OTHER\",\n      \""
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 44834.7,
+        "tokens_used": 2048,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"63\",\n      \"type\": \"AGE\",\n      \"start\": 26,\n      \"end\": 28\n    },\n    {\n      \"text\": \"white\",\n      \"type\": \"ETHNICITY\",\n      \"start\": 32,\n      \"end\": 37\n "
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 7,
+        "n_valid": 7,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 4,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "CONDITION": 1,
+          "AGE": 1,
+          "DATE": 1
+        },
+        "latency_ms": 20649.1,
+        "tokens_used": 996,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"mantle cell lymphoma\",\n      \"type\": \"CONDITION\",\n      \"start\": 17,\n      \"end\": 36\n    },\n    {\n      \"text\": \"47\",\n      \"type\": \"AGE\",\n      \"start\": 60,\n  "
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 44584.1,
+        "tokens_used": 2048,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Ms. XYZ\",\n      \"type\": \"NAME\",\n      \"start\": 13,\n      \"end\": 18\n    },\n    {\n      \"text\": \"69\",\n      \"type\": \"AGE\",\n      \"start\": 26,\n      \"end\": 28\n    "
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 6,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 2,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 15,
+        "phi_types": {
+          "Condition": 1,
+          "AGE": 1,
+          "Gender": 1,
+          "NAME": 1,
+          "date": 2,
+          "valueQuantity": 3,
+          "valueCodeableConcept": 2,
+          "bodySite": 4
+        },
+        "latency_ms": 28681.4,
+        "tokens_used": 1356,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Adenocarcinoma of the prostate\",\n      \"type\": \"Condition\",\n      \"start\": 17,\n      \"end\": 44\n    },\n    {\n      \"text\": \"71\",\n      \"type\": \"AGE\",\n      \"star"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 1850,
+        "n_resources": 8,
+        "n_valid": 7,
+        "n_invalid": 1,
+        "validity_rate": 0.875,
+        "resource_types": {
+          "Condition": 4,
+          "MedicationStatement": 2,
+          "Observation": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "CONDITION": 4,
+          "PROCEDURE": 1,
+          "MEDICATION": 2
+        },
+        "latency_ms": 31141.4,
+        "tokens_used": 1484,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Malnutrition\",\n      \"type\": \"CONDITION\",\n      \"start\": 23,\n      \"end\": 35\n    },\n    {\n      \"text\": \"dysphagia\",\n      \"type\": \"CONDITION\",\n      \"start\": 4"
+      },
+      {
+        "specialty": "Lab Medicine - Pathology",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 5,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 13,
+        "phi_types": {
+          "AGE": 1,
+          "BODY_SITE": 5,
+          "TEST": 3,
+          "SYMPTOM": 1,
+          "QUANTITY": 2,
+          "CONDITION": 1
+        },
+        "latency_ms": 25636.5,
+        "tokens_used": 1230,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"48\",\n      \"type\": \"AGE\",\n      \"start\": 9,\n      \"end\": 11\n    },\n    {\n      \"text\": \"right upper lobe\",\n      \"type\": \"BODY_SITE\",\n      \"start\": 36,\n      \""
+      },
+      {
+        "specialty": "Obstetrics / Gynecology",
+        "note_chars": 2000,
+        "n_resources": 12,
+        "n_valid": 12,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 4,
+          "MedicationStatement": 4,
+          "Observation": 4
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "CONDITION": 4,
+          "DATE": 1
+        },
+        "latency_ms": 44570.3,
+        "tokens_used": 2036,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Severe menometrorrhagia\",\n      \"type\": \"CONDITION\",\n      \"start\": 17,\n      \"end\": 40\n    },\n    {\n      \"text\": \"severe anemia\",\n      \"type\": \"CONDITION\",\n "
+      },
+      {
+        "specialty": "Podiatry",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 11,
+        "phi_types": {
+          "CONDITION": 2,
+          "BODY_SITE": 3,
+          "PROCEDURE": 1,
+          "ANESTHESIA": 2,
+          "AGE": 1,
+          "GENDER": 1,
+          "DATE": 1
+        },
+        "latency_ms": 16940.4,
+        "tokens_used": 829,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Foreign body\",\n      \"type\": \"CONDITION\",\n      \"start\": 18,\n      \"end\": 30\n    },\n    {\n      \"text\": \"right foot\",\n      \"type\": \"BODY_SITE\",\n      \"start\": "
+      },
+      {
+        "specialty": "Obstetrics / Gynecology",
+        "note_chars": 906,
+        "n_resources": 10,
+        "n_valid": 10,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 9
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 10,
+        "phi_types": {
+          "TEST": 2,
+          "PROBLEM": 1,
+          "BODY_SITE": 3,
+          "MEASUREMENT": 4
+        },
+        "latency_ms": 35600.3,
+        "tokens_used": 1721,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Transvaginal ultrasound\",\n      \"type\": \"TEST\",\n      \"start\": 8,\n      \"end\": 32\n    },\n    {\n      \"text\": \"pelvic pain\",\n      \"type\": \"PROBLEM\",\n      \"star"
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 1839,
+        "n_resources": 7,
+        "n_valid": 7,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 1,
+          "Observation": 5
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 22,
+        "phi_types": {
+          "NAME": 1,
+          "OTHER": 1,
+          "CONDITION": 1,
+          "MEDICATION": 1,
+          "FOOD": 4,
+          "ACTIVITY": 5,
+          "OBSERVATION": 5,
+          "DATE": 1,
+          "PERCENTAGE": 2,
+          "AGE": 1
+        },
+        "latency_ms": 38694.1,
+        "tokens_used": 1801,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"His brother\",\n      \"type\": \"NAME\",\n      \"start\": 1,\n      \"end\": 12\n    },\n    {\n      \"text\": \"vegetarian\",\n      \"type\": \"OTHER\",\n      \"start\": 16,\n      \""
+      },
+      {
+        "specialty": "Orthopedic",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 4,
+        "n_invalid": 2,
+        "validity_rate": 0.6666666666666666,
+        "resource_types": {
+          "Condition": 2,
+          "Observation": 2
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 6,
+        "phi_types": {
+          "CONDITION": 2,
+          "AGE": 1,
+          "GENDER": 1,
+          "DATE": 1,
+          "LOCATION": 1
+        },
+        "latency_ms": 23471.9,
+        "tokens_used": 1089,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"left atrophic mandibular fracture\",\n      \"type\": \"CONDITION\",\n      \"start\": 36,\n      \"end\": 64\n    },\n    {\n      \"text\": \"failed dental implant\",\n      \"typ"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 4,
+        "n_invalid": 1,
+        "validity_rate": 0.8,
+        "resource_types": {
+          "Condition": 2,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 11,
+        "phi_types": {
+          "CONDITION": 2,
+          "PROCEDURE": 2,
+          "TIME": 1,
+          "OTHER": 2,
+          "DRUG": 1,
+          "AGE": 1,
+          "DATE": 2
+        },
+        "latency_ms": 25795.9,
+        "tokens_used": 1214,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Left patellar chondromalacia\",\n      \"type\": \"CONDITION\",\n      \"start\": 28,\n      \"end\": 54\n    },\n    {\n      \"text\": \"Left patellar chondromalacia with tight"
+      },
+      {
+        "specialty": "Hematology - Oncology",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 2,
+        "n_invalid": 3,
+        "validity_rate": 0.4,
+        "resource_types": {
+          "Condition": 2
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 10,
+        "phi_types": {
+          "CONDITION": 2,
+          "LOCATION": 3,
+          "PROCEDURE": 3,
+          "ANESTHESIA": 1,
+          "SPECIFIC-TREATMENT": 1
+        },
+        "latency_ms": 22179.0,
+        "tokens_used": 1046,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Metastatic papillary cancer\",\n      \"type\": \"CONDITION\",\n      \"start\": 26,\n      \"end\": 52\n    },\n    {\n      \"text\": \"left neck\",\n      \"type\": \"LOCATION\",\n  "
+      },
+      {
+        "specialty": "Gastroenterology",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 6,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 1,
+          "Observation": 4
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 6,
+        "phi_types": {
+          "CONDITION": 1,
+          "PROCEDURE": 2,
+          "AGE": 1,
+          "NAME": 1,
+          "LOCATION": 1
+        },
+        "latency_ms": 18729.7,
+        "tokens_used": 894,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Acute appendicitis with perforation\",\n      \"type\": \"CONDITION\",\n      \"start\": 19,\n      \"end\": 46\n    },\n    {\n      \"text\": \"General\",\n      \"type\": \"PROCEDU"
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 13,
+        "phi_types": {
+          "OTHER": 5,
+          "AGE": 1,
+          "GENDER": 1,
+          "CONDITION": 2,
+          "SYMPTOM": 1,
+          "TEST": 1,
+          "VALUE_QUANTITY": 2
+        },
+        "latency_ms": 22034.6,
+        "tokens_used": 1021,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Right femoral artery\",\n      \"type\": \"OTHER\",\n      \"start\": 8,\n      \"end\": 24\n    },\n    {\n      \"text\": \"Selective right and left coronary angiogram\",\n      "
+      },
+      {
+        "specialty": "Ophthalmology",
+        "note_chars": 1527,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "LOCATION": 2,
+          "PROCEDURE": 1
+        },
+        "latency_ms": 11828.9,
+        "tokens_used": 573,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"right eye\",\n      \"type\": \"LOCATION\",\n      \"start\": 38,\n      \"end\": 46\n    },\n    {\n      \"text\": \"right eye\",\n      \"type\": \"LOCATION\",\n      \"start\": 69,\n  "
+      },
+      {
+        "specialty": "Urology",
+        "note_chars": 1506,
+        "n_resources": 1,
+        "n_valid": 1,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 20,
+        "phi_types": {
+          "CONDITION": 11,
+          "PROCEDURE": 6,
+          "SITE": 2,
+          "DEVICE": 1
+        },
+        "latency_ms": 19975.2,
+        "tokens_used": 966,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"prostate cancer\",\n      \"type\": \"CONDITION\",\n      \"start\": 23,\n      \"end\": 35\n    },\n    {\n      \"text\": \"radical prostatectomy\",\n      \"type\": \"PROCEDURE\",\n "
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 1524,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 44967.2,
+        "tokens_used": 2048,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"61\",\n      \"type\": \"AGE\",\n      \"start\": 26,\n      \"end\": 28\n    },\n    {\n      \"text\": \"female\",\n      \"type\": \"GENDER\",\n      \"start\": 30,\n      \"end\": 36\n   "
+      },
+      {
+        "specialty": "Gastroenterology",
+        "note_chars": 1558,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 2,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "CONDITION": 3,
+          "AGE": 1,
+          "GENDER": 1
+        },
+        "latency_ms": 14682.8,
+        "tokens_used": 731,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Abdominal mass\",\n      \"type\": \"CONDITION\",\n      \"start\": 25,\n      \"end\": 37\n    },\n    {\n      \"text\": \"Abdominal mass\",\n      \"type\": \"CONDITION\",\n      \"st"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 8,
+        "n_valid": 6,
+        "n_invalid": 2,
+        "validity_rate": 0.75,
+        "resource_types": {
+          "Condition": 2,
+          "MedicationStatement": 3,
+          "Observation": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 10,
+        "phi_types": {
+          "CONDITION": 5,
+          "PROCEDURE": 2,
+          "MEDICATION": 3
+        },
+        "latency_ms": 31300.3,
+        "tokens_used": 1486,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"acute non-ST-elevation MI\",\n      \"type\": \"CONDITION\",\n      \"start\": 38,\n      \"end\": 66\n    },\n    {\n      \"text\": \"LAD\",\n      \"type\": \"CONDITION\",\n      \"st"
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 860,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "Observation": 2,
+          "MedicationStatement": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 7,
+        "phi_types": {
+          "OTHER": 7
+        },
+        "latency_ms": 16259.5,
+        "tokens_used": 823,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Abnormal EKG\",\n      \"type\": \"OTHER\",\n      \"start\": 17,\n      \"end\": 27\n    },\n    {\n      \"text\": \"maximal heart rate\",\n      \"type\": \"OTHER\",\n      \"start\": "
+      },
+      {
+        "specialty": "Cosmetic / Plastic Surgery",
+        "note_chars": 1853,
+        "n_resources": 4,
+        "n_valid": 4,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 2,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 8,
+        "phi_types": {
+          "PROCEDURE": 1,
+          "OTHER": 4,
+          "MEDICATION": 3
+        },
+        "latency_ms": 17308.6,
+        "tokens_used": 845,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"BLEPHAROPLASTY\",\n      \"type\": \"PROCEDURE\",\n      \"start\": 0,\n      \"end\": 13\n    },\n    {\n      \"text\": \"upper lid skin\",\n      \"type\": \"OTHER\",\n      \"start\":"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 1780,
+        "n_resources": 5,
+        "n_valid": 3,
+        "n_invalid": 2,
+        "validity_rate": 0.6,
+        "resource_types": {
+          "Condition": 3
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 10,
+        "phi_types": {
+          "NAME": 1,
+          "AGE": 1,
+          "OTHER": 3,
+          "SUBSTANCE": 1,
+          "CONDITION": 3,
+          "DEVICE": 1
+        },
+        "latency_ms": 22624.3,
+        "tokens_used": 1102,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"A\",\n      \"type\": \"NAME\",\n      \"start\": 0,\n      \"end\": 1\n    },\n    {\n      \"text\": \"1\",\n      \"type\": \"AGE\",\n      \"start\": 3,\n      \"end\": 4\n    },\n    {\n  "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 2,
+        "n_invalid": 3,
+        "validity_rate": 0.4,
+        "resource_types": {
+          "Condition": 2
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 9,
+        "phi_types": {
+          "CONDITION": 3,
+          "SITE": 2,
+          "PROCEDURE": 2,
+          "ANESTHESIA": 2
+        },
+        "latency_ms": 20720.4,
+        "tokens_used": 1007,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"squamous cell carcinoma\",\n      \"type\": \"CONDITION\",\n      \"start\": 26,\n      \"end\": 49\n    },\n    {\n      \"text\": \"vulva\",\n      \"type\": \"SITE\",\n      \"start\":"
+      },
+      {
+        "specialty": "Pediatrics - Neonatal",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 6,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2,
+          "MedicationStatement": 1,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 2,
+        "phi_types": {
+          "NAME": 1,
+          "AGE": 1
+        },
+        "latency_ms": 17414.3,
+        "tokens_used": 853,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Patient\",\n      \"type\": \"NAME\",\n      \"start\": 13,\n      \"end\": 20\n    },\n    {\n      \"text\": \"13 years old\",\n      \"type\": \"AGE\",\n      \"start\": 23,\n      \"end"
+      },
+      {
+        "specialty": "SOAP / Chart / Progress Notes",
+        "note_chars": 1983,
+        "n_resources": 11,
+        "n_valid": 11,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 3,
+          "MedicationStatement": 3,
+          "Observation": 5
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "AGE": 1,
+          "GENDER": 1,
+          "PROCEDURE": 1,
+          "CONDITION": 1,
+          "DATE": 1
+        },
+        "latency_ms": 38980.1,
+        "tokens_used": 1803,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"65\",\n      \"type\": \"AGE\",\n      \"start\": 26,\n      \"end\": 28\n    },\n    {\n      \"text\": \"female\",\n      \"type\": \"GENDER\",\n      \"start\": 30,\n      \"end\": 36\n   "
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 9,
+        "n_valid": 9,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 2,
+          "Observation": 5,
+          "AllergyIntolerance": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 11,
+        "phi_types": {
+          "AGE": 1,
+          "SEX": 1,
+          "CONDITION": 1,
+          "DURATION": 1,
+          "SITE": 2,
+          "SUBSTANCE": 1,
+          "DRUG": 2,
+          "DOSE": 2
+        },
+        "latency_ms": 34515.2,
+        "tokens_used": 1627,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"26\",\n      \"type\": \"AGE\",\n      \"start\": 16,\n      \"end\": 18\n    },\n    {\n      \"text\": \"male\",\n      \"type\": \"SEX\",\n      \"start\": 20,\n      \"end\": 24\n    },\n "
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 2000,
+        "n_resources": 0,
+        "n_valid": 0,
+        "n_invalid": 0,
+        "validity_rate": null,
+        "resource_types": {},
+        "invalid_errors": [],
+        "n_phi_spans": 0,
+        "phi_types": {},
+        "latency_ms": 44390.2,
+        "tokens_used": 2048,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Aortic valve replacement\",\n      \"type\": \"CONDITION\",\n      \"start\": 17,\n      \"end\": 40\n    },\n    {\n      \"text\": \"stenotic valve\",\n      \"type\": \"CONDITION\","
+      },
+      {
+        "specialty": "Cardiovascular / Pulmonary",
+        "note_chars": 2000,
+        "n_resources": 3,
+        "n_valid": 3,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 5,
+        "phi_types": {
+          "AGE": 1,
+          "GENDER": 1,
+          "CONDITION": 3
+        },
+        "latency_ms": 15279.0,
+        "tokens_used": 750,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"46\",\n      \"type\": \"AGE\",\n      \"start\": 37,\n      \"end\": 39\n    },\n    {\n      \"text\": \"female\",\n      \"type\": \"GENDER\",\n      \"start\": 42,\n      \"end\": 48\n   "
+      },
+      {
+        "specialty": "General Medicine",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 6,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 3,
+          "MedicationStatement": 1,
+          "Observation": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 15,
+        "phi_types": {
+          "MEDICATION": 1,
+          "AGE": 1,
+          "ETHNICITY": 1,
+          "PLACE": 1,
+          "PROCEDURE": 1,
+          "TEST": 2,
+          "VALUE\u91cf": 5,
+          "DATE": 1,
+          "LOCATION": 2
+        },
+        "latency_ms": 31960.1,
+        "tokens_used": 1517,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Coumadin\",\n      \"type\": \"MEDICATION\",\n      \"start\": 17,\n      \"end\": 23\n    },\n    {\n      \"text\": \"82\",\n      \"type\": \"AGE\",\n      \"start\": 46,\n      \"end\": "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 4,
+        "n_invalid": 1,
+        "validity_rate": 0.8,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 2,
+          "Observation": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 13,
+        "phi_types": {
+          "LOCATION": 1,
+          "MEDICATION": 2,
+          "DEVICE": 4,
+          "ANATOMY": 6
+        },
+        "latency_ms": 24707.4,
+        "tokens_used": 1188,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"operating room\",\n      \"type\": \"LOCATION\",\n      \"start\": 6,\n      \"end\": 18\n    },\n    {\n      \"text\": \"lidocaine\",\n      \"type\": \"MEDICATION\",\n      \"start\": "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 2,
+        "n_invalid": 4,
+        "validity_rate": 0.3333333333333333,
+        "resource_types": {
+          "Condition": 2
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'",
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 11,
+        "phi_types": {
+          "CONDITION": 5,
+          "AGE": 1,
+          "GENDER": 1,
+          "BODY_SITE": 1,
+          "ANESTHESIA": 1,
+          "DATE": 1,
+          "PLACE": 1
+        },
+        "latency_ms": 25506.1,
+        "tokens_used": 1223,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Chondromalacia patella\",\n      \"type\": \"CONDITION\",\n      \"start\": 18,\n      \"end\": 43\n    },\n    {\n      \"text\": \"Patellofemoral malalignment syndrome\",\n      "
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 1382,
+        "n_resources": 2,
+        "n_valid": 2,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 2
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "OTHER": 2,
+          "DATE": 1
+        },
+        "latency_ms": 9839.5,
+        "tokens_used": 497,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Neck\",\n      \"type\": \"OTHER\",\n      \"start\": 3,\n      \"end\": 7\n    },\n    {\n      \"text\": \"lower back\",\n      \"type\": \"OTHER\",\n      \"start\": 11,\n      \"end\": 2"
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 988,
+        "n_resources": 2,
+        "n_valid": 1,
+        "n_invalid": 1,
+        "validity_rate": 0.5,
+        "resource_types": {
+          "Condition": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 4,
+        "phi_types": {
+          "CONDITION": 1,
+          "CODE": 2,
+          "PROCEDURE": 1
+        },
+        "latency_ms": 8849.0,
+        "tokens_used": 448,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Buttock abscess\",\n      \"type\": \"CONDITION\",\n      \"start\": 23,\n      \"end\": 37\n    },\n    {\n      \"text\": \"682.5\",\n      \"type\": \"CODE\",\n      \"start\": 40,\n   "
+      },
+      {
+        "specialty": "Consult - History and Phy.",
+        "note_chars": 2000,
+        "n_resources": 5,
+        "n_valid": 5,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 3,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 9,
+        "phi_types": {
+          "CONDITION": 4,
+          "MEDICATION": 1,
+          "AGE": 1,
+          "ETHNICITY": 1,
+          "OCCUPATION": 1,
+          "PLACE": 1
+        },
+        "latency_ms": 24374.7,
+        "tokens_used": 1176,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Acute deep venous thrombosis\",\n      \"type\": \"CONDITION\",\n      \"start\": 27,\n      \"end\": 58\n    },\n    {\n      \"text\": \"right lower extremity\",\n      \"type\": \""
+      },
+      {
+        "specialty": "Emergency Room Reports",
+        "note_chars": 2000,
+        "n_resources": 12,
+        "n_valid": 12,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 1,
+          "MedicationStatement": 7,
+          "Observation": 4
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 3,
+        "phi_types": {
+          "AGE": 1,
+          "LOCATION": 1,
+          "DATE": 1
+        },
+        "latency_ms": 32580.6,
+        "tokens_used": 1530,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"5\",\n      \"type\": \"AGE\",\n      \"start\": 17,\n      \"end\": 19\n    },\n    {\n      \"text\": \"Children's Hospital Emergency Department\",\n      \"type\": \"LOCATION\",\n   "
+      },
+      {
+        "specialty": "Discharge Summary",
+        "note_chars": 2000,
+        "n_resources": 11,
+        "n_valid": 11,
+        "n_invalid": 0,
+        "validity_rate": 1.0,
+        "resource_types": {
+          "Condition": 5,
+          "MedicationStatement": 3,
+          "Observation": 3
+        },
+        "invalid_errors": [],
+        "n_phi_spans": 11,
+        "phi_types": {
+          "CONDITION": 5,
+          "DATE": 5,
+          "AGE": 1
+        },
+        "latency_ms": 43797.5,
+        "tokens_used": 2011,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"Leiomyosarcoma\",\n      \"type\": \"CONDITION\",\n      \"start\": 16,\n      \"end\": 28\n    },\n    {\n      \"text\": \"pulmonary embolism\",\n      \"type\": \"CONDITION\",\n     "
+      },
+      {
+        "specialty": "Surgery",
+        "note_chars": 2000,
+        "n_resources": 6,
+        "n_valid": 5,
+        "n_invalid": 1,
+        "validity_rate": 0.8333333333333334,
+        "resource_types": {
+          "Condition": 3,
+          "MedicationStatement": 1,
+          "Observation": 1
+        },
+        "invalid_errors": [
+          "Procedure: Procedure: missing required field 'subject'"
+        ],
+        "n_phi_spans": 6,
+        "phi_types": {
+          "LOCATION": 6
+        },
+        "latency_ms": 23892.0,
+        "tokens_used": 1142,
+        "raw_truncated": "{\n  \"phi_spans\": [\n    {\n      \"text\": \"left temple\",\n      \"type\": \"LOCATION\",\n      \"start\": 67,\n      \"end\": 78\n    },\n    {\n      \"text\": \"left nasolabial fold\",\n      \"type\": \"LOCATION\",\n      \"s"
+      }
+    ]
+  },
+  "summary": {
+    "Base model": {
+      "avg_validity": 0.951,
+      "avg_resources": 3.06,
+      "avg_phi_spans": 5.9,
+      "perfect_validity": 31,
+      "empty_output": 13
+    },
+    "Fine-tuned": {
+      "avg_validity": 0.842,
+      "avg_resources": 5.08,
+      "avg_phi_spans": 7.06,
+      "perfect_validity": 28,
+      "empty_output": 6
+    }
+  }
+}

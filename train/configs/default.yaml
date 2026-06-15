@@ -1,0 +1,25 @@
+model_name: Qwen/Qwen2.5-Coder-7B-Instruct
+max_seq_length: 2048
+load_in_4bit: true
+
+# LoRA — r=16 is efficient for a small dataset; bump to 32+ if loss plateaus early
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# Training
+learning_rate: 2.0e-4
+num_train_epochs: 3
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8   # effective batch = 16
+warmup_steps: 10
+seed: 42
+output_dir: train/checkpoints

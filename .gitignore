@@ -27,3 +27,8 @@ evals/.work/
 .DS_Store
 .idea/
 *.log
+rag/index.lancedb
+train/checkpoints/
+serve/*.gguf
+serve/last_export.json
+unsloth_compiled_cache/
