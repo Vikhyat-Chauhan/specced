@@ -35,6 +35,9 @@ export-gguf: ## Merge LoRA adapter and export to GGUF for Ollama
 benchmark: ## Base-vs-fine-tuned eval on held-out set (requires trained adapter)
 	$(PY) -m evals.benchmark --data data/curated/held_out.jsonl --adapter train/checkpoints/adapter --n 20
 
+demo: ## Run the end-to-end demo (note → agent → de-identified FHIR)
+	$(PY) scripts/demo.py --adapter train/checkpoints/adapter
+
 compare: ## Three-way comparison: base vs FT vs FT+agent on held-out set
 	$(PY) -m evals.compare --data data/curated/held_out.jsonl --adapter train/checkpoints/adapter --n 20
 

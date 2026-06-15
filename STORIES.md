@@ -90,7 +90,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-8 — Write-up, blog series, demo ⬜
+## US-8 — Write-up, blog series, demo ✅
 **As** a job-seeker, **I want** metrics, charts, blog posts, and a recorded demo, **so that** the project is interview- and portfolio-ready for health-AI AI-Engineer roles.
 
 - **Scope:** blog angles (reject-sampling; QLoRA on 16GB; "how do you eval FHIR extraction?"; self-refine on schema errors; local-vs-Claude on cost/latency/privacy; de-id recall as a safety metric); charts; demo.
