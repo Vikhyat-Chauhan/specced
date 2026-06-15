@@ -2,7 +2,7 @@
 PY ?= .venv/bin/python
 CASE ?= specs/examples/cardio-visit.json
 
-.PHONY: help eval data data-offline test typecheck hero gate train benchmark
+.PHONY: help eval data data-offline test typecheck hero gate train benchmark rag-index agent-run
 
 help: ## List targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -34,6 +34,12 @@ export-gguf: ## Merge LoRA adapter and export to GGUF for Ollama
 
 benchmark: ## Base-vs-fine-tuned eval on held-out set (requires trained adapter)
 	$(PY) -m evals.benchmark --data data/curated/held_out.jsonl --adapter train/checkpoints/adapter --n 20
+
+rag-index: ## Build terminology vector index (required before agent uses RAG)
+	$(PY) -m rag.index
+
+agent-run: ## Run the agent on the first held-out case (requires trained adapter)
+	$(PY) -m agent.run data/curated/held_out.jsonl --adapter train/checkpoints/adapter
 
 gate: test data-offline ## Quality gate — run before every commit
 	@echo "✓ quality gate passed"

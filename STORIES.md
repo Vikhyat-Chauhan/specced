@@ -46,7 +46,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-4 — LangGraph agent: plan → retrieve → act → evaluate + self-refine ⬜
+## US-4 — LangGraph agent: plan → retrieve → act → evaluate + self-refine 🚧
 **As** a user, **I want** an agent that extracts, validates, and refines on FHIR errors, **so that** output validity and accuracy beat a single shot.
 
 - **Scope:** LangGraph graph; `act` = fine-tuned model; `evaluate` = the harness; on FHIR validation/eval failure, feed errors back to `act` (≤ N iterations).
@@ -57,7 +57,7 @@ The project as a sequence of user stories. Each has a goal, scope, acceptance cr
 
 ---
 
-## US-5 — Terminology RAG ⬜
+## US-5 — Terminology RAG 🚧
 **As** the agent, **I want** to retrieve standard codes during `retrieve`, **so that** extracted concepts are correctly coded (SNOMED/RxNorm/ICD-10/LOINC).
 
 - **Scope:** embed + vector store over terminology concepts (loaded from the user's licensed local copy); wire into the `retrieve` node so `act` can bind codes.

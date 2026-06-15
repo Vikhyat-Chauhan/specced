@@ -117,7 +117,7 @@ def train(cfg: dict[str, Any], data_dir: Path, out_dir: Path) -> dict[str, Any]:
             report_to=report_to,
             dataset_text_field="text",
             packing=False,
-            max_seq_length=cfg["max_seq_length"],
+            padding_free=False,
         ),
     )
 
