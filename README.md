@@ -43,6 +43,15 @@ Reproduce with one command (requires trained adapter):
 make compare
 ```
 
+**OOD test — 50 real MTSamples transcriptions** (no gold; FHIR validity only):
+
+| Model | Avg validity | Resources/note | PHI spans/note | Empty outputs |
+|---|---|---|---|---|
+| Base | 0.951 | 3.06 | 5.9 | 13/50 |
+| Fine-tuned | 0.842 | **5.08** | **7.06** | 6/50 |
+
+FT extracts 66% more resources and 20% more PHI on real notes; base is more conservative but higher-precision on OOD specialties. See [blog post 7](docs/blog/07-ood-generalization.md) for the full analysis.
+
 ## Features
 
 - **De-identification** — surfaces PHI spans (HIPAA Safe Harbor categories); recall is gated ≥ 0.95 because a missed span is a leak.
@@ -145,6 +154,7 @@ Design and engineering write-ups in **[docs/blog/](docs/blog/)**:
 4. [Self-refine on schema errors](docs/blog/04-self-refine.md)
 5. [De-id recall as a safety metric](docs/blog/05-deid-recall.md)
 6. [Local vs Claude: cost, latency, privacy](docs/blog/06-local-vs-claude.md)
+7. [OOD generalization: MTSamples benchmark on real clinical notes](docs/blog/07-ood-generalization.md)
 
 ## Make targets
 

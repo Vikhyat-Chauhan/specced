@@ -64,4 +64,21 @@ The held-out set is drawn from the same generator as the training set. This mean
 - Note length and style are controlled (template or Claude-written from the same structured facts)
 - PHI is synthetic (Faker)
 
-Real-world evaluation against i2b2 2014 (de-id) or MIMIC-III (FHIR extraction) would give a more honest picture of the capability gap between a 7B fine-tuned model and Claude. That's a natural next step for anyone deploying this in production.
+## OOD test: MTSamples
+
+To measure real-world generalization, we ran both models on 50 randomly sampled transcriptions from [MTSamples](https://huggingface.co/datasets/NickyNicky/medical_mtsamples) — 4,999 real de-identified clinical notes across 30+ specialties (allergy, surgery, orthopedics, neurology, gastroenterology, etc.). No gold annotations, so only FHIR validity can be measured.
+
+| Model | Avg FHIR validity | Resources/note | PHI spans/note | Empty outputs |
+|---|---|---|---|---|
+| Base | **0.951** | 3.06 | 5.9 | 13/50 |
+| Fine-tuned | 0.842 | **5.08** | **7.06** | 6/50 |
+
+**What this shows:**
+
+The fine-tuned model extracts 66% more resources and 20% more PHI spans on real notes — it's more aggressive and rarely gives up (6 empty vs 13). But its OOD validity drops to 0.842 vs the base model's 0.951. The extra resources include some that are structurally invalid FHIR — fields the model learned in training don't map cleanly to all specialty-specific note styles.
+
+The base model, by contrast, is conservative: when it's unsure, it produces nothing (13/50 empty) rather than hallucinating structure. What it does produce is 95% valid.
+
+**The OOD trade-off in one line:** fine-tuning improves recall on in-distribution data dramatically (0 → 20/20 passing) but trades some OOD precision for that gain. The fix is more training data with broader specialty coverage — `make data` with a larger `--n` and ideally Claude-written notes from varied specialties.
+
+Real-world evaluation against i2b2 2014 (de-id) or n2c2 2018 (medication extraction) would give a gold-annotated OOD picture. Those datasets require a DUA but are free for researchers.
